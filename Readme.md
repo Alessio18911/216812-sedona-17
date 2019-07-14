@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Иванов](https://up.htmlacademy.ru/adaptive/17/user/216812).
-* Наставник: `Алексей Удод`.
+* Наставник: `[Алексей Удод](https://htmlacademy.ru/profile/id523387)`.
 
 ---
 
