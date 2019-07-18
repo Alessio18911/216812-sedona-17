@@ -1,0 +1,98 @@
+.page-header {
+    position: relative;
+    padding: 0 0 36px;
+
+    &.is-opened {
+        .page-header__burger {
+            background-color: $white;
+
+            &::before,
+            &::after {
+                background-color: $white;
+            }
+        }
+
+        .main-nav {
+            max-height: 500px;
+        }
+    }
+}
+
+.page-header__burger-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+    padding: 15px;
+
+}
+
+.page-header__burger {
+    display: block;
+    width: 23px;
+    height: 4px;
+    background-color: $mainBlue;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        display: block;
+        width: 23px;
+        height: 4px;
+        background-color: $mainBlue;
+    }
+
+    &::before {
+        top: 7px;
+    }
+
+    &::after {
+        bottom: 7px;
+    }
+
+}
+
+.page-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page-header__block-title {
+    position: relative;
+    padding: 51px 0 67px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 50%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        display: block;
+        width: 320px;
+        height: 37px;
+        background: url(../img/bg-intro-triangle-mobile.svg) no-repeat 50% 50%;
+    }
+}
+
+.page-header__title {
+    display: block;
+    width: 230px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.page-header__logo {
+    position: relative;
+    height: 57px;
+}
+
+.page-header__logo-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
