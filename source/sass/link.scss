@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+
+  &--black {
+    color: $black;
+
+    &:hover {
+      color: $mainBlue;
+    }
+
+    &:active {
+      color: $grey1;
+    }
+  }
+}
