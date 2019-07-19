@@ -15,11 +15,13 @@
             &::before {
               top: 15px;
               transform: rotate(45deg);
+              transition: top 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
             }
 
             &::after {
               bottom: 15px;
               transform: rotate(135deg);
+              transition: bottom 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
             }
         }
 
@@ -45,7 +47,7 @@
     height: 4px;
     margin: 0 auto;
     background-color: $mainBlue;
-    transition: 0.2s ease-in-out;
+    transition: width 0.2s ease 0.2s;
 
     &::before,
     &::after {
@@ -56,17 +58,16 @@
         width: 23px;
         height: 4px;
         background-color: $mainBlue;
-        transition: 0.2s ease-in-out;
     }
 
     &::before {
         top: 7px;
-        transition: top 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
+        transition: top 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
     }
 
     &::after {
         bottom: 7px;
-        transition: bottom 0.5s ease-in-out, transform 0.5s ease-in-out 0.2s;
+        transition: bottom 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
     }
 
 }
