@@ -1,29 +1,29 @@
 .button {
-    display: block;
-    padding: 17px 0;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.2s ease-in-out;
+  display: block;
+  padding: 17px 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
 
-    &--blue {
-        color: $white;
-        background-color: $mainBlue;
+  &--blue {
+    color: $white;
+    background-color: $mainBlue;
 
-        &:hover {
-            background-color: $blue1;
-        }
-
-        &:active {
-            color: $grey2;
-            background-color: $blue2;
-        }
-
-        &:disabled {
-            color: $white;
-            background-color: $grey3;
-        }
+    &:hover {
+      background-color: $blue1;
     }
+
+    &:active {
+      color: $grey2;
+      background-color: $blue2;
+    }
+
+    &:disabled {
+      color: $white;
+      background-color: $grey3;
+    }
+  }
 }

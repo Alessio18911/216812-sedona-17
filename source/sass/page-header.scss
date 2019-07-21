@@ -1,113 +1,112 @@
 .page-header {
-    position: relative;
+  position: relative;
 
-    &.is-opened {
-        .page-header__burger {
-            width: 0;
-            background-color: $white;
+  &.is-opened {
+    .page-header__burger {
+      width: 0;
+      background-color: $white;
 
-            &::before,
-            &::after {
-              background-color: $white;
-            }
+      &::before,
+      &::after {
+        background-color: $white;
+      }
 
-            &::before {
-              top: 15px;
-              transform: rotate(45deg);
-              transition: top 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
-            }
+      &::before {
+        top: 15px;
+        transform: rotate(45deg);
+        transition: top 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
+      }
 
-            &::after {
-              bottom: 15px;
-              transform: rotate(135deg);
-              transition: bottom 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
-            }
-        }
-
-        .main-nav {
-            max-height: 500px;
-        }
+      &::after {
+        bottom: 15px;
+        transform: rotate(135deg);
+        transition: bottom 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
+      }
     }
+
+    .main-nav {
+      max-height: 500px;
+    }
+  }
 }
 
 .page-header__burger-wrapper {
-    position: absolute;
-    top: 10px;
-    right: 6px;
-    z-index: 1;
-    width: 53px;
-    height: 34px;
-    padding: 15px;
-
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  z-index: 1;
+  width: 53px;
+  height: 34px;
+  padding: 15px;
 }
 
 .page-header__burger {
+  display: block;
+  width: 23px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: $mainBlue;
+  transition: width 0.2s ease 0.2s;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 15px;
     display: block;
     width: 23px;
     height: 4px;
-    margin: 0 auto;
     background-color: $mainBlue;
-    transition: width 0.2s ease 0.2s;
+  }
 
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        right: 15px;
-        display: block;
-        width: 23px;
-        height: 4px;
-        background-color: $mainBlue;
-    }
+  &::before {
+    top: 7px;
+    transition: top 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
+  }
 
-    &::before {
-        top: 7px;
-        transition: top 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
-    }
-
-    &::after {
-        bottom: 7px;
-        transition: bottom 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
-    }
+  &::after {
+    bottom: 7px;
+    transition: bottom 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
+  }
 }
 
 .page-header__wrapper {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .page-header__block-title {
-    padding: 51px 0 67px;
-    background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 92%;
+  padding: 51px 0 67px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 92%;
 
-    &--index {
-      padding: 51px 0 46px;
-      background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
-    }
+  &--index {
+    padding: 51px 0 46px;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  }
 }
 
 .page-header__title {
-    display: block;
-    width: 230px;
-    height: 40px;
-    margin: 0 auto;
+  display: block;
+  width: 230px;
+  height: 40px;
+  margin: 0 auto;
 
-    &--index {
-      width: 280px;
-      height: 292px;
-    }
+  &--index {
+    width: 280px;
+    height: 292px;
+  }
 }
 
 .page-header__logo {
-    position: relative;
-    height: 57px;
+  position: relative;
+  height: 57px;
 }
 
 .page-header__logo-image {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 5;
-    transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
 }
