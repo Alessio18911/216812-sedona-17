@@ -1,6 +1,7 @@
 .media {
   display: flex;
   flex-direction: column;
+  padding: 36px 0 0;
   line-height: 1.7;
 }
 
@@ -13,14 +14,14 @@
 }
 
 .media__intro {
-  padding: 0 15px 30px;
+  padding: 0 25px 28px;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 1px solid $grey3;
 }
 
 .media__item {
-  padding: 20px 20px 17px;
+  padding: 22px 20px 16px;
   border-bottom: 1px solid $grey3;
 }
 

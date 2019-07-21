@@ -78,8 +78,13 @@
 }
 
 .page-header__block-title {
-    padding: 51px 0 46px;
-    background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
+    padding: 51px 0 67px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 92%;
+
+    &--index {
+      padding: 51px 0 46px;
+      background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
+    }
 }
 
 .page-header__title {
