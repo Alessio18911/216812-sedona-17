@@ -1,0 +1,21 @@
+.main-nav {
+    max-height: 0;
+    transition: 0.5s ease-in-out;
+
+    &--left-part {
+        .main-nav__item--first {
+            border-top: none;
+        }
+    }
+
+    &--right-part {
+        .main-nav__item--last {
+            border-bottom: none;
+        }
+    }
+}
+
+.main-nav__item {
+    border-top: 1px solid $blue4;
+    border-bottom: 1px solid $blue3;
+}
