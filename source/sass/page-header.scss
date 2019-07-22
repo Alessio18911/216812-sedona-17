@@ -94,8 +94,8 @@
 
 .page-header__block-title {
   padding: 51px 0 67px;
-  background-image: url("../img/bg-back-mobile@1x.jpg") ;
-  background-repeat:  no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-position: 50% 92%;
 
   @include mq(768) {
