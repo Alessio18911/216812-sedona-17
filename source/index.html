@@ -16,7 +16,7 @@
       <div class="page-header__wrapper">
         <ul class="main-nav main-nav--left-part">
           <li class="main-nav__item main-nav__item--first">
-            <a class="main-nav__item-link" href="">Главная</a>
+            <a class="main-nav__item-link is-active" href="">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="photo.html">фото и видео</a>
@@ -32,7 +32,11 @@
         </ul>
       </div>
       <div class="page-header__logo">
+        <picture>
+          <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона" />
+        </picture>
       </div>
       <div class="page-header__block-title page-header__block-title--index">
         <img class="page-header__title page-header__title--index" src="img/text-sedona-index.svg" width="459" height="360" alt="Sedona">
@@ -96,7 +100,6 @@
           </section>
         </div>
       </section>
-
       <section class="find-hotels">
         <h2 class="find-hotels__title">Заинтересовались?</h2>
         <p class="find-hotels__hint">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -104,7 +107,6 @@
         <div class="find-hotels__map"></div>
       </section>
     </main>
-
     <footer class="page-footer">
       <a class="page-footer__tag-link link link--black" href="#">#VISITSEDONA</a>
 

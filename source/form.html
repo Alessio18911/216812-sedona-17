@@ -12,7 +12,6 @@
       <div class="page-header__burger-wrapper">
         <button class="page-header__burger" type="button" aria-label="Показать/скрыть главное меню"></div>
       </div>
-
       <div class="page-header__wrapper">
         <ul class="main-nav main-nav--left-part">
           <li class="main-nav__item main-nav__item--first">
@@ -24,7 +23,7 @@
         </ul>
         <ul class="main-nav main-nav--right-part">
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="">Форма отзыва</a>
+            <a class="main-nav__item-link is-active" href="">Форма отзыва</a>
           </li>
           <li class="main-nav__item main-nav__item--last">
             <a href="https://htmlacademy.ru/" class="main-nav__item-link">HTML academy</a>
@@ -32,7 +31,11 @@
         </ul>
       </div>
       <div class="page-header__logo">
+        <picture>
+          <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
           <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона" />
+        </picture>
       </div>
       <div class="page-header__block-title">
         <img class="page-header__title" src="img/text-sedona.svg" width="230" height="40" alt="Sedona">
