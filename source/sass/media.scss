@@ -1,51 +1,59 @@
 .media {
-  display: flex;
-  flex-direction: column;
-  padding: 36px 0 0;
+  padding: 36px 15px 0;
   line-height: 1.7;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .media__title {
-  padding: 0 15px 26px;
+  margin: 0 0 26px;
   font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .media__intro {
-  padding: 0 25px 28px;
-  text-align: center;
-  text-transform: uppercase;
+  width: calc(100% + 30px);
+  padding: 0 22px 28px;
+  margin: 0 -15px;
   border-bottom: 1px solid $grey3;
 }
 
+.media__wrapper {
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+}
+
 .media__item {
-  padding: 22px 20px 16px;
+  padding: 22px 20px 17px;
+  text-align: left;
   border-bottom: 1px solid $grey3;
 }
 
 .media__photo-wrapper {
   width: 280px;
   height: 280px;
+  margin: 0 0 17px;
 }
 
 .media__photo-title {
-  padding: 17px 0 0;
+  margin: 0;
   font-size: 14px;
-  text-transform: uppercase;
 }
 
 .media__photo-author {
-  padding: 0 0 5px;
-}
-
-.media__likes-block {
-  display: flex;
-  align-items: center;
+  margin: 0 0 4px;
+  text-transform: none;
 }
 
 .media__likes-button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 15px 0 0;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
   &:hover {
     .media__likes-icon {
       fill: $black;
@@ -59,6 +67,9 @@
 }
 
 .media__likes-count {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
   font-weight: 700;
-  padding: 5px 0 0 15px;
+  padding: 5px 0 0;
 }

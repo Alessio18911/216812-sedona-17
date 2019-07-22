@@ -1,5 +1,5 @@
 .about {
-  padding: 38px 15px 0;
+  padding: 39px 15px 0;
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
@@ -56,6 +56,9 @@
 
 .about__item-number {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 14px;
 
   &::before,
   &::after {
@@ -78,7 +81,7 @@
 }
 
 .about__item-intro {
-  padding: 14px 0 0;
+  margin: 0;
 }
 
 .about__item-image {
@@ -89,7 +92,7 @@
 
 .about__details {
   padding: 34px 0 10px;
-  text-align: initial;
+  text-align: left;
 }
 
 .about__details-item {
@@ -107,6 +110,10 @@
 }
 
 .about__details-title {
-  padding: 0 0 13px;
+  margin: 0 0 13px;
   font-size: 18px;
+}
+
+.about__details-description {
+  margin: 0;
 }
