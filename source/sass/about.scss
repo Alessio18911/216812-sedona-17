@@ -1,18 +1,23 @@
 .about {
-  padding: 38px 0 0;
+  padding: 38px 15px 0;
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
 }
 
 .about__title {
-  padding: 0 15px 28px;
+  margin: 0 0 28px;
   font-size: 18px;
 }
 
 .about__intro {
-  padding: 0 15px 43px;
+  margin: 0 0 43px;
   line-height: 1.8;
+}
+
+.about__wrapper {
+  width: calc(100% + 30px);
+  margin: 0 -15px;
 }
 
 .about__item-wrapper {
@@ -45,7 +50,7 @@
 }
 
 .about__item-title {
-  padding: 0 0 10px;
+  margin: 0 0 10px;
   font-size: 18px;
 }
 
