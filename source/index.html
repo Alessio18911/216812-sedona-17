@@ -44,59 +44,76 @@
     </header>
     <main class="page-content">
       <section class="about">
-        <h2 class="about__title">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p class="about__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <header class="about__header">
+          <h2 class="about__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="about__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </header>
         <div class="about__wrapper">
           <section class="about__item about__item--dark">
-            <div class="about__item-wrapper">
+            <header class="about__item-header">
               <h3 class="about__item-title">Настоящий городок</h3>
               <span class="about__item-number">№1</span>
               <p class="about__item-intro">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <img class="about__item-image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото">
+            </header>
+            <picture>
+              <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
+              <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
+              <img class="about__item-image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото">
+            </picture>
             <section class="about__details">
               <div class="about__details-item about__details-item--first">
-                <h4 class="about__details-title">Жилье</h4>
-                <p class="about__details-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <header class="about__details-item-header">
+                  <h4 class="about__details-title">Жилье</h4>
+                  <p class="about__details-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </header>
               </div>
               <div class="about__details-item about__details-item--dark">
-                <h4 class="about__details-title">Сувениры</h4>
-                <p class="about__details-description">Не только китайского, но и местного производства!</p>
+                <header class="about__details-item-header">
+                  <h4 class="about__details-title">Сувениры</h4>
+                  <p class="about__details-description">Не только китайского, но и местного производства!</p>
+                </header>
               </div>
               <div class="about__details-item about__details-item--third">
-                <h4 class="about__details-title">Еда</h4>
-                <p class="about__details-description">Всегда заказывайте<br> фирменный бургер, Вы не разочаруетесь!</p>
+                <header class="about__details-item-header">
+                  <h4 class="about__details-title">Еда</h4>
+                  <p class="about__details-description">Всегда заказывайте<br> фирменный бургер, Вы не разочаруетесь!</p>
+                </header>
               </div>
             </section>
           </section>
           <section class="about__item about__item--dark">
-            <div class="about__item-wrapper">
+            <header class="about__item-header">
               <h3 class="about__item-title">ТАМ ЕСТЬ Мост дьявола</h3>
               <span class="about__item-number">№2</span>
               <p class="about__item-intro">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <img class="about__item-image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото">
+            </header>
+            <picture>
+              <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+              <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+              <img class="about__item-image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото">
+            </picture>
+
           </section>
           <section class="about__item">
-            <div class="about__item-wrapper">
+            <header class="about__item-header">
               <h3 class="about__item-title">Небольшая площадь</h3>
               <span class="about__item-number">№3</span>
               <p class="about__item-intro">Все интересные места находятся очень близко</p>
-            </div>
+            </header>
           </section>
           <section class="about__item">
-            <div class="about__item-wrapper">
+            <header class="about__item-header">
               <h3 class="about__item-title">Красивая дорога</h3>
               <span class="about__item-number">№4</span>
               <p class="about__item-intro">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
+            </header>
           </section>
           <section class="about__item">
-            <div class="about__item-wrapper">
+            <header class="about__item-header">
               <h3 class="about__item-title">Мало туристов</h3>
               <span class="about__item-number">№5</span>
               <p class="about__item-intro">Большинство едет в Гранд каньон и толпится там</p>
-            </div>
+            </header>
           </section>
         </div>
       </section>
