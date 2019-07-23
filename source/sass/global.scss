@@ -2,6 +2,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   letter-spacing: 0.1px;
+  background-color: $grey6;
 }
 
 * {
@@ -13,6 +14,20 @@ body {
 
   @include mq(768) {
     display: inline;
+  }
+}
+
+.container {
+  max-width: 425px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 20px 0 $grey1;
+
+  @include mq(768) {
+    max-width: 900px;
+  }
+
+  @include mq(1200) {
+    max-width: 1200px;
   }
 }
 
