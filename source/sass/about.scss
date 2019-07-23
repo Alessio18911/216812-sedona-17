@@ -99,14 +99,6 @@
   }
 }
 
-.about__break-line {
-  display: none;
-
-  @include mq(768) {
-    display: inline;
-  }
-}
-
 .about__item-header {
   position: relative;
   padding: 24px 35px 30px;
