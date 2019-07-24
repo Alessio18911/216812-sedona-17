@@ -198,8 +198,7 @@
   padding: 0 0 17px;
 
   @include mq(768) {
-    flex-direction: column;
-    align-items: center;
+    display: block;
     width: calc(100% / 3);
     padding: 0;
   }
@@ -212,6 +211,7 @@
     margin: 0 10px 0 0;
 
     @include mq(768) {
+      display: block;
       width: 77px;
       height: 77px;
       margin: 0 0 26px;
