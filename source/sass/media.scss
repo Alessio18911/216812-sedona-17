@@ -1,8 +1,26 @@
 .media {
-  padding: 36px 15px 0;
   line-height: 1.7;
   text-align: center;
   text-transform: uppercase;
+  background-color: $white;
+}
+
+.media__header {
+  position: relative;
+  width: 86%;
+  padding: 36px 0 29px;
+  margin: 0 auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 128%;
+    height: 1px;
+    margin: 0 -14%;
+    background-color: $grey3;
+  }
 }
 
 .media__title {
@@ -11,15 +29,7 @@
 }
 
 .media__intro {
-  width: calc(100% + 30px);
-  padding: 0 22px 28px;
-  margin: 0 -15px;
-  border-bottom: 1px solid $grey3;
-}
-
-.media__wrapper {
-  width: calc(100% + 30px);
-  margin: 0 -15px;
+  margin: 0;
 }
 
 .media__item {
@@ -28,10 +38,12 @@
   border-bottom: 1px solid $grey3;
 }
 
-.media__photo-wrapper {
+.media__photo {
+  display: block;
   width: 280px;
   height: 280px;
   margin: 0 0 17px;
+  object-fit: cover;
 }
 
 .media__photo-title {
@@ -44,12 +56,14 @@
   text-transform: none;
 }
 
+.media__likes-block {
+  display: flex;
+  align-items: center;
+}
+
 .media__likes-button {
-  display: inline-block;
-  vertical-align: middle;
   padding: 0;
   margin: 0 15px 0 0;
-  font-size: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -67,9 +81,6 @@
 }
 
 .media__likes-count {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 14px;
   font-weight: 700;
   padding: 5px 0 0;
 }

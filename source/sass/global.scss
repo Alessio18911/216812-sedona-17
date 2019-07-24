@@ -18,16 +18,16 @@ body {
 }
 
 .container {
-  max-width: 425px;
+  width: 320px;
   margin: 0 auto;
   box-shadow: 1px 1px 20px 0 $grey1;
 
   @include mq(768) {
-    max-width: 900px;
+    width: 768px;
   }
 
   @include mq(1200) {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
