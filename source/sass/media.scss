@@ -162,6 +162,7 @@
 .media__photo-info-text {
   @include mq(768) {
     width: 220px;
+    margin: 0 auto 0 0;
   }
 
   @include mq(1200) {
@@ -186,7 +187,7 @@
 
   @include mq(768) {
     min-width: 66px;
-    margin: -6px 0 0 auto;
+    margin: -6px 0 0;
   }
 
   @include mq(1200) {
