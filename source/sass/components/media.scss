@@ -1,0 +1,231 @@
+.media {
+  line-height: 1.7;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $white;
+}
+
+.media__header {
+  position: relative;
+  width: 86%;
+  padding: 36px 0 29px;
+  margin: 0 auto;
+
+  @include mq(768) {
+    width: 58%;
+    padding: 62px 0 70px;
+  }
+
+  @include mq(1200) {
+    width: 37%;
+    padding: 97px 0 73px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 116%;
+    height: 1px;
+    margin: 0 -8%;
+    background-color: $grey3;
+
+    @include mq(768) {
+      display: none;
+    }
+  }
+}
+
+.media__title {
+  margin: 0 0 26px;
+  font-size: 18px;
+
+  @include mq(768) {
+    margin: 0 0 19px;
+    font-size: 30px;
+  }
+
+  @include mq(1200) {
+    margin: 0 0 20px;
+  }
+}
+
+.media__intro {
+  margin: 0;
+}
+
+.media__wrapper {
+  @include mq(768) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  @include mq(1200) {
+    width: 100%;
+  }
+}
+
+.media__item {
+  padding: 22px 20px 0;
+  text-align: left;
+  border-bottom: 1px solid $grey3;
+
+  @include mq(768) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  @include mq(1200) {
+    position: relative;
+    width: calc(100% / 3);
+    padding: 15.6% 0 0;
+  }
+
+  &:first-child {
+    @include mq(768) {
+      width: 100%;
+    }
+
+    @include mq(1200) {
+      padding: 26.7% 0 0;
+    }
+
+    .media__photo {
+      @include mq(768) {
+        height: 400px;
+      }
+
+      @include mq(1200) {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.media__photo {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+
+  @include mq(768) {
+    height: 267px;
+  }
+
+  @include mq(1200) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+.media__photo-info {
+  padding: 17px 0;
+
+  @include mq(768) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 17px 18px 13px;
+    background-color: $grey6;
+  }
+
+  @include mq(1200) {
+    position: relative;
+    padding: 16px 21px 13px;
+    color: $white;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: $black;
+      opacity: 0.5;
+    }
+  }
+}
+
+.media__photo-info-text {
+  @include mq(768) {
+    width: 220px;
+    margin: 0 auto 0 0;
+  }
+
+  @include mq(1200) {
+    position: relative;
+  }
+}
+
+.media__photo-title {
+  margin: 0;
+  font-size: 14px;
+}
+
+.media__photo-author {
+  margin: 0 0 4px;
+  text-transform: none;
+}
+
+.media__likes-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include mq(768) {
+    min-width: 66px;
+    margin: -6px 0 0;
+  }
+
+  @include mq(1200) {
+    position: relative;
+    min-width: 64px;
+  }
+}
+
+.media__likes-button {
+  padding: 0;
+  margin: 0 15px 0 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include mq(768) {
+    margin: 0 10px 0 0;
+  }
+
+  &:hover {
+    .media__likes-icon {
+      fill: $black;
+
+      @include mq(1200) {
+        fill: $grey2;
+      }
+    }
+  }
+}
+
+.media__likes-icon {
+  fill: $grey1;
+  transition: 0.2s ease-in-out;
+
+  @include mq(1200) {
+    fill: $white;
+  }
+}
+
+.media__likes-count {
+  font-weight: 700;
+  padding: 5px 0 0;
+}
