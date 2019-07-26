@@ -233,19 +233,19 @@
 
   &--first {
     &::before {
-      background-image: url("../../img/icon-burger.svg");
+      background-image: url("../img/icon-burger.svg");
     }
   }
 
   &--second {
     &::before {
-      background-image: url("../../img/icon-gift.svg");
+      background-image: url("../img/icon-gift.svg");
     }
   }
 
   &--third {
     &::before {
-      background-image: url("../../img/icon-house.svg");
+      background-image: url("../img/icon-house.svg");
     }
   }
 }
