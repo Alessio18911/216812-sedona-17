@@ -5,4 +5,4 @@ window.onload = function() {
   toggleMenu.addEventListener('click', function() {
     header.classList.toggle('is-opened');
   });
-}
+};
