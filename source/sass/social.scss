@@ -1,27 +1,37 @@
 .social {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social__item {
-    display: flex;
-    width: 48px;
-    height: 48px;
-    padding: 0;
-    margin: 0 5px 0 0;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0 5px 10px 0;
+  background-color: $mainBlue;
+  transition: background-color 0.2s ease-in-out;
 
-    &:last-of-type {
-        margin: 0;
-    }
+  &:last-of-type {
+    margin: 0;
+  }
 
-    &:active {
-        .social__item-pic {
-            fill: $grey2;
-        }
+  &:hover {
+    background-color: $blue1;
+  }
+
+  &:active {
+    background-color: $blue2;
+
+    .social__item-pic {
+      fill: $grey2;
     }
+  }
 }
 
 .social__item-pic {
-    margin: auto;
-    fill: $white;
-    transition: fill 0.2s ease-in-out;
+  margin: auto;
+  fill: $white;
+  transition: fill 0.2s ease-in-out;
 }
