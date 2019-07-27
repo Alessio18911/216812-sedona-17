@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
       <header class="page-header">
         <div class="page-header__burger-wrapper">
-          <button class="page-header__burger" type="button" aria-label="Показать/скрыть главное меню">
+          <button class="page-header__burger" type="button" aria-label="Показать/скрыть главное меню"></button>
         </div>
 
         <div class="page-header__wrapper">
@@ -46,8 +45,14 @@
       <main class="page-content">
         <section class="about">
           <header class="about__header">
-            <h2 class="about__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="about__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <div class="about__header-wrapper">
+              <h2 class="about__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+              <p class="about__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
+              <polygon fill="#81b3d2" points="760.469,57 760.469,30.889 599.955,57"/>
+              <polygon fill="#81b3d2" points="440.469,57 599.955,57 440.469,31.056"/>
+            </svg>
           </header>
           <div class="about__wrapper">
             <section class="about__item about__item--dark">
@@ -68,7 +73,7 @@
                     <p class="about__details-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </header>
                 </div>
-                <div class="about__details-item about__details-item--dark">
+                <div class="about__details-item about__details-item--dark about__details-item--second">
                   <header class="about__details-item-header">
                     <h4 class="about__details-title">Сувениры</h4>
                     <p class="about__details-description">Не только китайского, но и местного производства!</p>
