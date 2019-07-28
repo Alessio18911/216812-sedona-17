@@ -1,55 +1,43 @@
 .main-nav {
   max-height: 0;
-  padding: 0;
-  margin: 0;
-  list-style: none;
   font-size: 18px;
   font-weight: bold;
   line-height: 2.2;
   text-align: center;
   text-transform: uppercase;
   transition: max-height 0.4s ease-in-out;
+  overflow: hidden;
 
   @include mq(768) {
     display: flex;
-    width: 270px;
+    justify-content: space-between;
     max-height: none;
     font-size: 14px;
   }
 
-  @include mq(1200) {
-    width: 400px;
+  &--opened {
+    max-height: 500px;
+  }
+}
+
+.main-nav__part {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @include mq(768) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
   }
 
-  &--left-part {
-    .main-nav__item--first {
-      border-top: none;
-
-      @include mq(768) {
-        margin: 0 75px 0 0;
-      }
-
-      @include mq(1200) {
-        margin: 0 160px 0 0;
-      }
-    }
+  &--left {
+    border-top: none;
   }
 
-  &--right-part {
-    @include mq(768) {
-      justify-content: flex-end;
-    }
-
+  &--right {
     .main-nav__item--last {
       border-bottom: none;
-
-      @include mq(768) {
-        margin: 0 0 0 49px;
-      }
-
-      @include mq(1200) {
-        margin: 0 0 0 137px;
-      }
     }
   }
 }
@@ -59,20 +47,23 @@
   border-bottom: 1px solid $blue3;
 
   @include mq(768) {
+    display: flex;
+    width: 50%;
     border: none;
   }
 }
 
 .main-nav__item-link {
   display: block;
-  padding: 8px 0 7px;
+  padding: 8px 45px 7px;
   color: $white;
   background-color: $mainBlue;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 
   @include mq(768) {
-    padding: 13px 0;
+    padding: 13px 10px;
+    margin: 0 auto;
     color: $black;
     background-color: $white;
   }
