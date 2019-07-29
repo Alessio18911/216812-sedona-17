@@ -3,29 +3,26 @@
   padding: 17px;
   font-size: 18px;
   font-weight: 700;
+  color: $white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: 0.2s ease-in-out;
+  background-color: $mainBlue;
   border: none;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 
-  &--blue {
+  &:hover {
+    background-color: $blue1;
+  }
+
+  &:active {
+    color: $grey2;
+    background-color: $blue2;
+  }
+
+  &:disabled {
     color: $white;
-    background-color: $mainBlue;
-
-    &:hover {
-      background-color: $blue1;
-    }
-
-    &:active {
-      color: $grey2;
-      background-color: $blue2;
-    }
-
-    &:disabled {
-      color: $white;
-      background-color: $grey3;
-    }
+    background-color: $grey3;
   }
 }

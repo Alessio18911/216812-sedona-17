@@ -1,8 +1,9 @@
 window.onload = function() {
-  const header = document.querySelector('.page-header');
-  const toggleMenu = header.querySelector('.page-header__burger-wrapper');
+  const toggleMenu = document.querySelector('.page-header__burger-wrapper'),
+        menu = document.querySelector('.main-nav');
 
   toggleMenu.addEventListener('click', function() {
-    header.classList.toggle('is-opened');
+    this.classList.toggle('page-header__burger-wrapper--opened');
+    menu.classList.toggle('main-nav--opened');
   });
 };
