@@ -1,0 +1,84 @@
+.input-text {
+  display: flex;
+  align-items: center;
+
+  &--with-icon {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+}
+
+.input-text__wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    background-color: $grey12;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--phone::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email::after {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.input-text__input {
+  width: 100%;
+  height: 58px;
+  padding: 0 16px 3px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  background-color: $grey6;
+  border: 4px solid transparent;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $grey3;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-color: $grey3;
+  }
+
+  &--with-icon {
+    padding: 0 65px 2px 16px;
+  }
+
+  &--textarea {
+    height: 158px;
+    padding: 11px 16px 3px 16px;
+  }
+}
+
+.input-text__input::placeholder {
+  color: $black;
+}
+
+.input-text__label {
+  order: -1;
+  margin: 0 14px 0 0;
+  max-width: 75px;
+
+  &--with-icon {
+    width: 100%;
+    max-width: none;
+    padding: 0 21px;
+    margin: 0 0 11px;
+  }
+}

@@ -1,0 +1,45 @@
+.feedback {
+  line-height: 1.75;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback__header {
+  border-bottom: 1px solid $grey3;
+
+  @include mq(768) {
+    border-bottom: none;
+  }
+}
+
+.feedback__header-wrapper {
+  width: 90%;
+  padding: 35px 0 17px;
+  margin: 0 auto;
+
+  @include mq(768) {
+    width: 58%;
+    padding: 68px 0;
+  }
+
+  @include mq(1200) {
+    width: 37%;
+    padding: 105px 0;
+  }
+}
+
+.feedback__title {
+  margin: 0 0 24px;
+  font-size: 18px;
+
+  @include mq(768) {
+    margin: 0 0 26px;
+    font-size: 30px;
+    line-height: 1.24;
+  }
+}
+
+.feedback__intro {
+  margin: 0;
+  line-height: 1.75;
+}
