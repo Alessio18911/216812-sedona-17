@@ -4,7 +4,6 @@
 }
 
 .feedback__header {
-  border-bottom: 1px solid $grey3;
   text-align: center;
 
   @include mq(768) {
@@ -19,12 +18,12 @@
 
   @include mq(768) {
     width: 58%;
-    padding: 85px 0 57px;
+    padding: 68px 0 74px;
   }
 
   @include mq(1200) {
     width: 37%;
-    padding: 123px 0 41px;
+    padding: 104px 0 59px;
   }
 }
 
