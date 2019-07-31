@@ -53,8 +53,9 @@
             </div>
           </header>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__fieldset">
-              <legend class="form__fieldset-legend">Представьтесь:</legend>
+            <fieldset class="form__fieldset form__fieldset--inputs-simple">
+              <legend class="visually-hidden">Представьтесь:</legend>
+              <h3 class="form__legend form__legend--inputs-simple">Представьтесь:</h3>
               <div class="form__input input-text">
                 <input class="input-text__input" id="name-field" name="name" type="text" required>
                 <label class="input-text__label" for="name-field">Имя*:</label>
@@ -70,7 +71,10 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--inputs-with-icon">
-              <legend class="form__fieldset-legend">Контактная информация:</legend>
+              <legend class="visually-hidden">Контактная информация:</legend>
+              <div class="form__legend-wrapper">
+                <h3 class="form__legend form__legend--with-icon">Контактная информация:</h3>
+              </div>
               <div class="form__input form__input--with-icon input-text input-text--with-icon">
                 <div class="input-text__wrapper input-text__wrapper--phone">
                   <input class="input-text__input input-text__input--with-icon" id="phone-field" name="phone" type="text" placeholder="Введите телефон" required>
@@ -86,7 +90,8 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--radio">
-              <legend class="form__fieldset-legend form__fieldset-legend--radio">Ваше общее впечатление:</legend>
+              <legend class="visually-hidden">Ваше общее впечатление:</legend>
+              <h3 class="form__legend form__legend--radio">Ваше общее впечатление:</h3>
               <div class="form__input form__input--radio input-not-text">
                 <input class="input-not-text__input" id="radio1" name="radio-button" type="radio">
                 <label for="radio1" class="input-not-text__label input-not-text__label--radio">
@@ -117,51 +122,62 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--checkboxes">
-              <legend class="form__fieldset-legend form__fieldset-legend--checkbox">Посещенные достопримечательности:</legend>
-              <div class="form__input form__input--checkbox input-not-text">
-                <input class="input-not-text__input" id="checkbox1" name="checkbox1" type="checkbox">
-                <label for="checkbox1" class="input-not-text__label">
-                  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
-                  </svg>
-                  <span>Мост Дьявола</span>
-                </label>
+              <legend class="visually-hidden">Посещенные достопримечательности:</legend>
+              <div class="form__legend-wrapper">
+                <h3 class="form__legend form__legend--checkbox">Посещенные достопримечательности:</h3>
               </div>
-              <div class="form__input form__input--checkbox input-not-text">
-                <input class="input-not-text__input" id="checkbox2" name="checkbox2" type="checkbox">
-                <label for="checkbox2" class="input-not-text__label">
-                  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
-                  </svg>
-                  <span>Гора-Колокол</span>
-                </label>
-              </div>
-              <div class="form__input form__input--checkbox input-not-text">
-                <input class="input-not-text__input" id="checkbox3" name="checkbox3" type="checkbox">
-                <label for="checkbox3" class="input-not-text__label">
-                  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
-                  </svg>
-                  <span>Слайд-парк</span>
-                </label>
-              </div>
-              <div class="form__input form__input--checkbox input-not-text">
-                <input class="input-not-text__input" id="checkbox4" name="checkbox4" type="checkbox">
-                <label for="checkbox4" class="input-not-text__label">
-                  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
-                  </svg>
-                  <span>Красные скалы</span>
-                </label>
+              <div class="form__fieldset-wrapper">
+                <div class="form__input form__input--checkbox input-not-text">
+                  <input class="input-not-text__input" id="checkbox1" name="checkbox1" type="checkbox">
+                  <label for="checkbox1" class="form__label form__label--checkboxes input-not-text__label">
+                    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
+                    </svg>
+                    <span>Мост Дьявола</span>
+                  </label>
+                </div>
+                <div class="form__input form__input--checkbox input-not-text">
+                  <input class="input-not-text__input" id="checkbox2" name="checkbox2" type="checkbox">
+                  <label for="checkbox2" class="input-not-text__label">
+                    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
+                    </svg>
+                    <span>Гора-Колокол</span>
+                  </label>
+                </div>
+                <div class="form__input form__input--checkbox input-not-text">
+                  <input class="input-not-text__input" id="checkbox3" name="checkbox3" type="checkbox">
+                  <label for="checkbox3" class="input-not-text__label">
+                    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
+                    </svg>
+                    <span>Слайд-парк</span>
+                  </label>
+                </div>
+                <div class="form__input form__input--checkbox input-not-text">
+                  <input class="input-not-text__input" id="checkbox4" name="checkbox4" type="checkbox">
+                  <label for="checkbox4" class="input-not-text__label">
+                    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path d="M23.3 5.3l-1.1-1.1c-.3-.3-.9-.3-1.2 0L9.2 16.1 3 9.9c-.3-.3-.9-.3-1.2 0L.7 11c-.3.3-.3.9 0 1.2L8.6 20c.2.2.4.2.6.2.2 0 .4-.1.6-.2L23.3 6.5c.3-.3.3-.9 0-1.2z"/>
+                    </svg>
+                    <span>Красные скалы</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--textarea">
-              <legend class="form__fieldset-legend form__fieldset-legend--textarea">Опишите свои эмоции:</legend>
+              <legend class="visually-hidden">Опишите свои эмоции:</legend>
+              <div class="form__legend-wrapper">
+                <h3 class="form__legend form__legend--textarea">Опишите свои эмоции:</h3>
+              </div>
               <textarea class="form__textarea input-text__input input-text__input--textarea" name="textarea" id="textarea-field" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
-            <button class="form__submit button" type="submit">Отправить отзыв</button>
+            <div class="form__bottom">
+              <button class="form__submit button" type="submit">Отправить отзыв</button>
+              <p class="form__remark">* — обязательные поля</p>
+            </div>
           </form>
         </section>
       </main>

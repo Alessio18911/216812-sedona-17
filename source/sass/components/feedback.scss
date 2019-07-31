@@ -19,12 +19,12 @@
 
   @include mq(768) {
     width: 58%;
-    padding: 68px 0;
+    padding: 68px 0 57px;
   }
 
   @include mq(1200) {
     width: 37%;
-    padding: 105px 0;
+    padding: 105px 0 41px;
   }
 }
 

@@ -1,44 +1,206 @@
 .form {
   line-height: 1.45;
+
+  @include mq(768) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 17px 60px 0;
+    line-height: 1.24;
+  }
+
+  @include mq(1200) {
+    padding: 17px 120px 0;
+  }
 }
 
 .form__fieldset {
-  padding: 22px 20px 24px;
+  padding: 18px 20px 24px;
   margin: 0;
   border: none;
   border-bottom: 1px solid $grey3;
 
+  @include mq(768) {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  &--inputs-simple {
+    @include mq(768) {
+      position: relative;
+      width: 50%;
+      padding: 0 0 0 56px;
+      margin: 0 0 69px;
+    }
+
+    @include mq(1200) {
+      padding: 0 0 0 80px;
+      margin: 0 0 67px;
+    }
+
+    &::before {
+      @include mq(768) {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 1px;
+        height: 100%;
+        background-color: $grey3;
+      }
+    }
+  }
+
   &--inputs-with-icon {
-    padding: 23px 20px 28px;
+    @include mq(768) {
+      padding: 0 0 30px;
+    }
+
+    @include mq(1200) {
+      display: flex;
+      outline: 2px solid green;
+    }
   }
 
   &--radio {
-    padding: 23px 20px 29px;
+    padding: 18px 20px 30px;
+
+    @include mq(768) {
+      order: -1;
+      width: 50%;
+      padding: 0;
+      margin: 0 0 70px;
+    }
+
+    @include mq(1200) {
+      margin: 0 0 68px;
+    }
   }
 
   &--checkboxes {
-    padding: 16px 20px 26px;
+    padding: 18px 20px 26px;
+
+    @include mq(768) {
+      padding: 24px 0 11px;
+    }
   }
 
   &--textarea {
     padding: 18px 20px 47px;
     border-bottom: none;
+
+    @include mq(768) {
+      padding: 27px 0 55px;
+    }
   }
 }
 
-.form__fieldset-legend {
-  padding: 18px 0 0;
-  margin: 0 auto;
+.form__legend-wrapper {
+  @include mq(768) {
+    position: relative;
+  }
+
+  &::before,
+  &::after {
+    @include mq(768) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: calc((100% - 402px) / 2);
+      height: 1px;
+      background-color: $grey3;
+    }
+  }
+
+  &::before {
+    @include mq(768) {
+      left: 0;
+    }
+  }
+
+  &::after {
+    @include mq(768) {
+      right: 0;
+    }
+  }
+}
+
+.form__legend {
+  margin: 0 auto 22px;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
 
+  @include mq(768) {
+    width: 402px;
+    font-size: 21px;
+    background-color: $white;
+  }
+
+  &--inputs-simple {
+    @include mq(768) {
+      width: 100%;
+      margin: 0 0 58px;
+      text-align: left;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &--with-icon {
+    @include mq(768) {
+      margin: 0 auto 30px;
+    }
+  }
+
   &--radio {
-    padding: 18px 0 0;
+    @include mq(768) {
+      width: 100%;
+      margin: 0 0 59px;
+      text-align: left;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    @include mq(1200) {
+      margin: 0 0 59px 79px;
+    }
   }
 
   &--checkbox {
-    padding: 18px 0 0;
+    margin: 0 auto 18px;
+
+    @include mq(768) {
+      margin: 0 auto 41px;
+    }
+  }
+
+  &--textarea {
+    @include mq(768) {
+      margin: 0 auto 57px;
+    }
+  }
+}
+
+.form__fieldset-wrapper {
+  @include mq(768) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 459px;
+    margin: 0 auto;
+  }
+
+  @include mq(1200) {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -47,14 +209,50 @@
 
   &--with-icon {
     margin: 0 0 13px;
+
+    @include mq(768) {
+      margin: 0 0 26px;
+    }
+
+    @include mq(1200) {
+      width: 50%;
+      outline: 1px solid red;
+    }
   }
 
   &--radio {
     margin: 0 0 12px;
+
+    @include mq(768) {
+      margin: 0 0 22px;
+    }
   }
 
   &--checkbox {
     margin: 0 0 24px;
+
+    @include mq(768) {
+      width: 43.7%;
+      margin: 0 0 32px;
+    }
+
+    @include mq(1200) {
+      width: 21.1%;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      @include mq(768) {
+        margin: 0;
+      }
+    }
+
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      @include mq(1200) {
+        margin: 0;
+      }
+    }
   }
 
   &:last-child {
@@ -62,8 +260,33 @@
   }
 }
 
+.form__bottom {
+  @include mq(768) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 62px;
+  }
+}
+
 .form__submit {
   width: calc(100% - 40px);
   margin: 0 auto 37px;
   font-size: 21px;
+
+  @include mq(768) {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.form__remark {
+  display: none;
+
+  @include mq(768) {
+    display: block;
+    margin: 0;
+    color: $grey8;
+  }
 }
