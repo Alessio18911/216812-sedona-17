@@ -1,11 +1,11 @@
 .feedback {
   line-height: 1.75;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .feedback__header {
   border-bottom: 1px solid $grey3;
+  text-align: center;
 
   @include mq(768) {
     border-bottom: none;
@@ -19,12 +19,12 @@
 
   @include mq(768) {
     width: 58%;
-    padding: 68px 0 57px;
+    padding: 85px 0 57px;
   }
 
   @include mq(1200) {
     width: 37%;
-    padding: 105px 0 41px;
+    padding: 123px 0 41px;
   }
 }
 

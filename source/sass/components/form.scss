@@ -4,17 +4,16 @@
   @include mq(768) {
     display: flex;
     flex-wrap: wrap;
-    padding: 17px 60px 0;
+    padding: 0 60px;
     line-height: 1.24;
   }
 
   @include mq(1200) {
-    padding: 17px 120px 0;
+    padding: 0 120px;
   }
 }
 
 .form__fieldset {
-  padding: 18px 20px 24px;
   margin: 0;
   border: none;
   border-bottom: 1px solid $grey3;
@@ -25,16 +24,17 @@
   }
 
   &--inputs-simple {
+    padding: 18px 20px 24px;
+
     @include mq(768) {
       position: relative;
       width: 50%;
       padding: 0 0 0 56px;
-      margin: 0 0 69px;
+      margin: 0 0 68px;
     }
 
     @include mq(1200) {
       padding: 0 0 0 80px;
-      margin: 0 0 67px;
     }
 
     &::before {
@@ -52,23 +52,24 @@
   }
 
   &--inputs-with-icon {
+    padding: 18px 20px 29px;
+
     @include mq(768) {
-      padding: 0 0 30px;
+      padding: 0 0 54px;
     }
 
     @include mq(1200) {
-      display: flex;
-      outline: 2px solid green;
+      padding: 0 0 27px;
     }
   }
 
   &--radio {
-    padding: 18px 20px 30px;
+    padding: 18px 20px 28px;
 
     @include mq(768) {
       order: -1;
       width: 50%;
-      padding: 0;
+      padding: 0 40px 0 0;
       margin: 0 0 70px;
     }
 
@@ -81,16 +82,16 @@
     padding: 18px 20px 26px;
 
     @include mq(768) {
-      padding: 24px 0 11px;
+      padding: 0 0 68px;
     }
   }
 
   &--textarea {
-    padding: 18px 20px 47px;
+    padding: 18px 20px 45px;
     border-bottom: none;
 
     @include mq(768) {
-      padding: 27px 0 55px;
+      padding: 0 0 55px;
     }
   }
 }
@@ -126,7 +127,7 @@
 }
 
 .form__legend {
-  margin: 0 auto 22px;
+  margin: 0 0 22px;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -154,6 +155,10 @@
     @include mq(768) {
       margin: 0 auto 30px;
     }
+
+    @include mq(1200) {
+      margin: 0 auto 75px;
+    }
   }
 
   &--radio {
@@ -169,7 +174,7 @@
     }
 
     @include mq(1200) {
-      margin: 0 0 59px 79px;
+      text-align: center;
     }
   }
 
@@ -182,6 +187,8 @@
   }
 
   &--textarea {
+    margin: 0 auto 19px;
+
     @include mq(768) {
       margin: 0 auto 57px;
     }
@@ -202,6 +209,13 @@
     width: 100%;
     margin: 0;
   }
+
+  &--with-icon {
+    @include mq(768) {
+      width: 100%;
+      margin: 0;
+    }
+  }
 }
 
 .form__input {
@@ -211,17 +225,17 @@
     margin: 0 0 13px;
 
     @include mq(768) {
+      width: 100%;
       margin: 0 0 26px;
     }
 
     @include mq(1200) {
       width: 50%;
-      outline: 1px solid red;
     }
   }
 
   &--radio {
-    margin: 0 0 12px;
+    margin: 0 0 13px;
 
     @include mq(768) {
       margin: 0 0 22px;
@@ -229,7 +243,7 @@
   }
 
   &--checkbox {
-    margin: 0 0 24px;
+    margin: 0 0 23px;
 
     @include mq(768) {
       width: 43.7%;
@@ -237,7 +251,8 @@
     }
 
     @include mq(1200) {
-      width: 21.1%;
+      width: auto;
+      max-width: 21.1%;
     }
 
     &:last-child,
@@ -286,6 +301,7 @@
 
   @include mq(768) {
     display: block;
+    max-width: 200px;
     margin: 0;
     color: $grey8;
   }

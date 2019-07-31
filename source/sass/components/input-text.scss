@@ -32,7 +32,7 @@
 
   &--phone {
     @include mq(1200) {
-      //width: auto;
+      width: 65.7%;
     }
 
     &::after {
@@ -42,7 +42,7 @@
 
   &--email {
     @include mq(1200) {
-      //width: auto;
+      width: 65.7%;
     }
 
     &::after {
@@ -78,7 +78,7 @@
   }
 
   &--textarea {
-    height: 158px;
+    height: 160px;
     padding: 11px 16px 3px 16px;
   }
 }
@@ -93,13 +93,20 @@
   max-width: 75px;
 
   &--with-icon {
-    width: 100%;
     max-width: none;
-    padding: 0 21px 0 0;
+    padding: 0 0 0 21px;
     margin: 0 0 11px;
 
     @include mq(1200) {
-      width: auto;
+      max-width: 165px;
+      padding: 0 15px 0 0;
+      margin: 0;
+    }
+  }
+
+  span {
+    @include mq(1200) {
+      display: none;
     }
   }
 }
