@@ -1,14 +1,14 @@
 .form {
   line-height: 1.45;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     flex-wrap: wrap;
     padding: 0 60px;
     line-height: 1.24;
   }
 
-  @include mq(1200) {
+  @include mq($desktop) {
     padding: 0 120px;
   }
 }
@@ -18,14 +18,14 @@
   border: none;
   border-top: 1px solid $grey3;
 
-  @include mq(768) {
+  @include mq($tablet) {
     width: 100%;
   }
 
   &--inputs-simple {
     padding: 18px 20px 24px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       position: relative;
       width: 50%;
       padding: 0 0 0 56px;
@@ -33,12 +33,12 @@
       border-top: none;
     }
 
-    @include mq(1200) {
+    @include mq($desktop) {
       padding: 0 0 0 80px;
     }
 
     &::before {
-      @include mq(768) {
+      @include mq($tablet) {
         content: "";
         position: absolute;
         top: 0;
@@ -54,11 +54,11 @@
   &--inputs-with-icon {
     padding: 18px 20px 29px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       padding: 0 0 79px;
     }
 
-    @include mq(1200) {
+    @include mq($desktop) {
       padding: 0 0 51px;
     }
   }
@@ -66,7 +66,7 @@
   &--radio {
     padding: 18px 20px 28px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       order: -1;
       width: 50%;
       padding: 0 40px 0 0;
@@ -74,7 +74,7 @@
       border-top: none;
     }
 
-    @include mq(1200) {
+    @include mq($desktop) {
       margin: 0 0 68px;
     }
   }
@@ -82,7 +82,7 @@
   &--checkboxes {
     padding: 18px 20px 26px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       padding: 0 0 81px;
     }
   }
@@ -90,7 +90,7 @@
   &--textarea {
     padding: 18px 20px 45px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       padding: 0 0 52px;
     }
   }
@@ -102,14 +102,14 @@
   font-weight: 700;
   text-align: center;
 
-  @include mq(768) {
+  @include mq($tablet) {
     width: 402px;
     font-size: 21px;
     background-color: $white;
   }
 
   &--inputs-simple {
-    @include mq(768) {
+    @include mq($tablet) {
       width: 100%;
       margin: 0 0 58px;
       text-align: left;
@@ -122,17 +122,17 @@
   }
 
   &--with-icon {
-    @include mq(768) {
+    @include mq($tablet) {
       margin: -13px auto 30px;
     }
 
-    @include mq(1200) {
+    @include mq($desktop) {
       margin: -15px auto 75px;
     }
   }
 
   &--radio {
-    @include mq(768) {
+    @include mq($tablet) {
       width: 100%;
       margin: 0 0 59px;
       text-align: left;
@@ -143,7 +143,7 @@
       }
     }
 
-    @include mq(1200) {
+    @include mq($desktop) {
       text-align: center;
     }
   }
@@ -151,7 +151,7 @@
   &--checkbox {
     margin: 0 auto 18px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       margin: -26px auto 41px;
     }
   }
@@ -159,14 +159,14 @@
   &--textarea {
     margin: 0 auto 19px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       margin: -13px auto 57px;
     }
   }
 }
 
 .form__fieldset-wrapper {
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -175,13 +175,13 @@
     margin: 0 auto;
   }
 
-  @include mq(1200) {
+  @include mq($desktop) {
     width: 100%;
     margin: 0;
   }
 
   &--with-icon {
-    @include mq(768) {
+    @include mq($tablet) {
       width: 100%;
       margin: 0;
     }
@@ -194,12 +194,12 @@
   &--with-icon {
     margin: 0 0 13px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       width: 100%;
       margin: 0 0 26px;
     }
 
-    @include mq(1200) {
+    @include mq($desktop) {
       width: 50%;
     }
   }
@@ -207,7 +207,7 @@
   &--radio {
     margin: 0 0 13px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       margin: 0 0 22px;
     }
   }
@@ -215,26 +215,26 @@
   &--checkbox {
     margin: 0 0 23px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       width: 43.7%;
       margin: 0 0 32px;
     }
 
-    @include mq(1200) {
+    @include mq($desktop) {
       width: auto;
       max-width: 21.1%;
     }
 
     &:last-child,
     &:nth-last-child(2) {
-      @include mq(768) {
+      @include mq($tablet) {
         margin: 0;
       }
     }
 
     &:nth-last-child(3),
     &:nth-last-child(4) {
-      @include mq(1200) {
+      @include mq($desktop) {
         margin: 0;
       }
     }
@@ -246,7 +246,7 @@
 }
 
 .form__bottom {
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,7 +260,7 @@
   margin: 0 auto 37px;
   font-size: 21px;
 
-  @include mq(768) {
+  @include mq($tablet) {
     width: 50%;
     margin: 0;
   }
@@ -269,7 +269,7 @@
 .form__remark {
   display: none;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: block;
     max-width: 200px;
     margin: 0;

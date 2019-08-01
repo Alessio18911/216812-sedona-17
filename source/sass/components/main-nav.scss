@@ -8,7 +8,7 @@
   transition: max-height 0.4s ease-in-out;
   overflow: hidden;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     justify-content: space-between;
     max-height: none;
@@ -25,7 +25,7 @@
   padding: 0;
   margin: 0;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     flex-wrap: wrap;
     width: 40%;
@@ -46,7 +46,7 @@
   border-top: 1px solid $blue4;
   border-bottom: 1px solid $blue3;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     width: 50%;
     border: none;
@@ -61,7 +61,7 @@
   text-decoration: none;
   transition: 0.2s ease-in-out;
 
-  @include mq(768) {
+  @include mq($tablet) {
     padding: 13px 10px;
     margin: 0 auto;
     color: $black;
@@ -71,7 +71,7 @@
   &:hover {
     background-color: $blue1;
 
-    @include mq(768) {
+    @include mq($tablet) {
       color: $mainBlue;
       background-color: transparent;
     }
@@ -81,14 +81,14 @@
     color: $grey2;
     background-color: $blue2;
 
-    @include mq(768) {
+    @include mq($tablet) {
       color: $grey1;
       background-color: transparent;
     }
   }
 
   &.is-active {
-    @include mq(768) {
+    @include mq($tablet) {
       color: $brown1;
 
       &:hover {

@@ -19,7 +19,7 @@
     background-position: 50%;
     background-size: 100% 100%;
 
-    @include mq(768) {
+    @include mq($tablet) {
       display: none;
     }
   }
@@ -30,12 +30,12 @@
   padding: 39px 0 43px;
   margin: 0 auto;
 
-  @include mq(768) {
+  @include mq($tablet) {
     width: 70%;
     padding: 50px 0;
   }
 
-  @include mq(1200) {
+  @include mq($desktop) {
     width: 45%;
   }
 }
@@ -44,7 +44,7 @@
   margin: 0 0 27px;
   font-size: 18px;
 
-  @include mq(768) {
+  @include mq($tablet) {
     font-size: 21px;
     line-height: 1.24;
   }
@@ -56,14 +56,14 @@
 }
 
 .about__wrapper {
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 .about__item {
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% / 3);
@@ -80,19 +80,19 @@
       background-color: $grey5;
       transform: translateX(-50%);
 
-      @include mq(768) {
+      @include mq($tablet) {
         display: none;
       }
     }
   }
 
   &--dark {
-    @include mq(768) {
+    @include mq($tablet) {
       width: 100%;
     }
 
     &:nth-child(2) {
-      @include mq(768) {
+      @include mq($tablet) {
         .about__item-header {
           order: 2;
         }
@@ -104,12 +104,12 @@
       color: $white;
       background-color: $mainBlue;
 
-      @include mq(768) {
+      @include mq($tablet) {
         width: 33.3%;
         padding: 44px 44px 40px;
       }
 
-      @include mq(1200) {
+      @include mq($desktop) {
         padding: 52px 60px;
       }
 
@@ -125,11 +125,11 @@
   padding: 24px 35px 30px;
   background-color: $grey4;
 
-  @include mq(768) {
+  @include mq($tablet) {
     padding: 45px 47px;
   }
 
-  @include mq(1200) {
+  @include mq($desktop) {
     width: 100%;
     padding: 45px 47px 65px;
   }
@@ -139,7 +139,7 @@
   margin: 0 0 10px;
   font-size: 18px;
 
-  @include mq(768) {
+  @include mq($tablet) {
     font-size: 21px;
     line-height: 1.24;
   }
@@ -151,7 +151,7 @@
   vertical-align: top;
   margin: 0 0 14px;
 
-  @include mq(768) {
+  @include mq($tablet) {
     margin: 0 0 22px;
   }
 
@@ -180,33 +180,32 @@
 }
 
 .about__item-image-container {
-  @include mq(768) {
+  height: 260px;
+
+  @include mq($tablet) {
     width: 66.7%;
+    height: 256px;
   }
 }
 
 .about__item-image {
   display: block;
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
-
-  @include mq(768) {
-    height: 256px;
-  }
 }
 
 .about__details {
   padding: 25px 22px 19px;
   text-align: left;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     padding: 56px 0 61px;
     text-align: center;
   }
 
-  @include mq(1200) {
+  @include mq($desktop) {
     width: 100%;
     padding: 56px 0 82px;
   }
@@ -217,7 +216,7 @@
   display: flex;
   padding: 0 0 19px;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: block;
     width: calc(100% / 3);
     padding: 0;
@@ -233,7 +232,7 @@
     background-position: 50% 50%;
     background-size: cover;
 
-    @include mq(768) {
+    @include mq($tablet) {
       display: block;
       width: 77px;
       height: 77px;
@@ -248,7 +247,7 @@
   }
 
   &--second {
-    @include mq(768) {
+    @include mq($tablet) {
       order: 2;
     }
 
@@ -267,7 +266,7 @@
 .about__details-item-header {
   padding: 9px 0 0;
 
-  @include mq(768) {
+  @include mq($tablet) {
     padding: 0 45px;
   }
 }
@@ -276,7 +275,7 @@
   margin: 0 0 13px;
   font-size: 18px;
 
-  @include mq(768) {
+  @include mq($tablet) {
     margin: 0 0 21px;
     font-size: 21px;
     line-height: 1.24;
