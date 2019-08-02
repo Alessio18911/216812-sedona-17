@@ -3,20 +3,20 @@
   text-align: center;
   background-color: $white;
 
-  @include mq(768) {
+  @include mq($tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 35px 54px 26px 59px;
   }
 
-  @include mq(1200) {
+  @include mq($desktop) {
     padding: 37px 113px 26px 118px;
   }
 }
 
 .page-footer__item {
-  @include mq(768) {
+  @include mq($tablet) {
     width: 30%;
   }
 
@@ -27,7 +27,7 @@
     font-size: 21px;
     font-weight: 700;
 
-    @include mq(768) {
+    @include mq($tablet) {
       margin: 0 0 13px;
       text-align: left;
     }
@@ -36,7 +36,7 @@
   &--social {
     margin: 0 0 26px;
 
-    @include mq(768) {
+    @include mq($tablet) {
       margin: 0 6px 0 0;
     }
   }
@@ -46,7 +46,7 @@
     letter-spacing: 0.3px;
     text-transform: uppercase;
 
-    @include mq(768) {
+    @include mq($tablet) {
       margin: 0 0 13px;
       text-align: right;
     }

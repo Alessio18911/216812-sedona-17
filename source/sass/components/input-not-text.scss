@@ -1,0 +1,79 @@
+.input-not-text__input {
+  display: none;
+}
+
+.input-not-text__input:checked ~ .input-not-text__label svg {
+  opacity: 1;
+}
+
+.input-not-text__input:disabled ~ .input-not-text__label {
+  cursor: default;
+
+  &::before {
+    background-color: $grey13;
+  }
+
+  svg {
+    fill: $grey14;
+  }
+}
+
+.input-not-text__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  height: 100%;
+  padding: 0 0 0 78px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  cursor: pointer;
+
+  @include mq($desktop) {
+    padding: 0 0 0 80px;
+  }
+
+  &:hover::before {
+    background-color: $grey3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: $grey6;
+    transition: 0.2s ease-in-out;
+  }
+
+  //фикс бага с min-height в IE11
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
+
+  &--radio {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+
+  &--checkbox {
+    &::before {
+      border-radius: 5px;
+    }
+  }
+}
+
+.input-not-text__label svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}

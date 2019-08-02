@@ -1,10 +1,12 @@
 @import "normalize";
 @import "fonts";
-@import "colors";
+@import "variables";
 @import "mixins";
 @import "global";
 @import "components/link";
 @import "components/button";
+@import "components/input-text";
+@import "components/input-not-text";
 @import "components/page-header";
 @import "components/main-nav";
 @import "components/page-footer";
@@ -13,3 +15,5 @@
 @import "components/about";
 @import "components/find-hotels";
 @import "components/player";
+@import "components/feedback";
+@import "components/form";

@@ -58,11 +58,13 @@
                 <span class="about__item-number">№1</span>
                 <p class="about__item-intro">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </header>
-              <picture class="about__item-image-container">
-                <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
-                <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
-                <img class="about__item-image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото">
-              </picture>
+              <div class="about__item-image-container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" >
+                  <img class="about__item-image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото">
+                </picture>
+              </div>
               <section class="about__details">
                 <div class="about__details-item about__details-item--first">
                   <header class="about__details-item-header">
@@ -90,12 +92,13 @@
                 <span class="about__item-number">№2</span>
                 <p class="about__item-intro">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </header>
-              <picture class="about__item-image-container">
-                <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
-                <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
-                <img class="about__item-image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото">
-              </picture>
-
+              <div class="about__item-image-container">
+                <picture class="about__item-image-container">
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" >
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" >
+                  <img class="about__item-image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото">
+                </picture>
+              </div>
             </section>
             <section class="about__item">
               <header class="about__item-header">
@@ -128,7 +131,7 @@
           <a class="find-hotels__button button" href="#">Найти гостиницу</a>
         </header>
 
-          <div class="find-hotels__map"></div>
+          <div class="find-hotels__map" id="map"></div>
         </section>
       </main>
       <footer class="page-footer">
@@ -164,6 +167,9 @@
         </section>
       </footer>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmY6fZR_VI2oqdAVkBoTSQRe_bWpqznfg&callback=initMap"
+    async defer></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

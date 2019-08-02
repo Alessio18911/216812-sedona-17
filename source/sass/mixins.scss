@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin retina($retina-dpi: $retina-dpi, $retina-dppx: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
