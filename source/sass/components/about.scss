@@ -63,30 +63,17 @@
 }
 
 .about__item {
+  background-color: $grey4;
+
   @include mq($tablet) {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% / 3);
   }
 
-  &:not(:last-child) .about__item-header {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: calc(100% - 40px);
-      height: 1px;
-      background-color: $grey5;
-      transform: translateX(-50%);
-
-      @include mq($tablet) {
-        display: none;
-      }
-    }
-  }
-
   &--dark {
+    background-color: $mainBlue;
+
     @include mq($tablet) {
       width: 100%;
     }
@@ -98,40 +85,45 @@
         }
       }
     }
+  }
 
-    .about__item-header {
-      padding: 38px 20px 40px;
-      color: $white;
-      background-color: $mainBlue;
-
-      @include mq($tablet) {
-        width: 33.3%;
-        padding: 44px 44px 40px;
-      }
-
-      @include mq($desktop) {
-        padding: 52px 60px;
-      }
-
-      &::after {
-        display: none;
-      }
-    }
+  &:last-child .about__item-header {
+    border-bottom: none;
   }
 }
 
 .about__item-header {
   position: relative;
-  padding: 24px 35px 30px;
-  background-color: $grey4;
+  width: 88%;
+  padding: 24px 15px 29px;
+  margin: 0 auto;
+  border-bottom: 1px solid $grey5;
 
   @include mq($tablet) {
+    width: 100%;
     padding: 45px 47px;
+    border-bottom: none;
   }
 
   @include mq($desktop) {
     width: 100%;
     padding: 45px 47px 65px;
+  }
+
+  &--dark {
+    width: 100%;
+    padding: 38px 20px 40px;
+    color: $white;
+    border-bottom: none;
+
+    @include mq($tablet) {
+      width: 33.3%;
+      padding: 44px 44px 40px;
+    }
+
+    @include mq($desktop) {
+      padding: 52px 60px;
+    }
   }
 }
 
@@ -198,6 +190,7 @@
 .about__details {
   padding: 25px 22px 19px;
   text-align: left;
+  background-color: $white;
 
   @include mq($tablet) {
     display: flex;
