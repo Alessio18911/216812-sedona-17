@@ -63,13 +63,16 @@
 .page-footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
-  transition: fill 0.2s ease-in-out;
 
-  &:hover {
+  &:hover svg {
     fill: $mainBlue;
   }
 
-  &:active {
+  &:active svg {
     fill: $grey1;
   }
+}
+
+.page-footer__copyright-link svg {
+  transition: fill 0.2s ease-in-out;
 }
