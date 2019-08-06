@@ -111,6 +111,7 @@
 .player__button svg {
   margin: auto;
   fill: $grey7;
+
   @include transition();
 
   @include mq($tablet) {

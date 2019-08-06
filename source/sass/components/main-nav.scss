@@ -5,6 +5,7 @@
   line-height: 2.2;
   text-align: center;
   text-transform: uppercase;
+
   @include transition(max-height, 0.4s);
   overflow: hidden;
 
@@ -59,6 +60,7 @@
   color: $white;
   background-color: $mainBlue;
   text-decoration: none;
+
   @include transition();
 
   @include mq($tablet) {
