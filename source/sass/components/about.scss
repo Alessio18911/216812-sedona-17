@@ -14,10 +14,9 @@
     left: 0;
     width: 100%;
     height: 17px;
-    background-image: url("../img/bg-intro-triangle-mobile1.svg");
+    background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @include mq($tablet) {
       display: none;
@@ -41,10 +40,11 @@
 }
 
 .about__title {
-  margin: 0 0 27px;
+  margin: 0 0 26px;
   font-size: 18px;
 
   @include mq($tablet) {
+    margin: 0 0 28px;
     font-size: 21px;
     line-height: 1.24;
   }
@@ -63,30 +63,15 @@
 }
 
 .about__item {
+  background-color: $grey4;
+
   @include mq($tablet) {
-    display: flex;
-    flex-wrap: wrap;
     width: calc(100% / 3);
   }
 
-  &:not(:last-child) .about__item-header {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: calc(100% - 40px);
-      height: 1px;
-      background-color: $grey5;
-      transform: translateX(-50%);
-
-      @include mq($tablet) {
-        display: none;
-      }
-    }
-  }
-
   &--dark {
+    background-color: $mainBlue;
+
     @include mq($tablet) {
       width: 100%;
     }
@@ -94,44 +79,66 @@
     &:nth-child(2) {
       @include mq($tablet) {
         .about__item-header {
-          order: 2;
+          margin: 0 0 0 auto;
+        }
+
+        .about__item-image {
+          left: 0;
         }
       }
     }
+  }
 
-    .about__item-header {
-      padding: 38px 20px 40px;
-      color: $white;
-      background-color: $mainBlue;
+  &:last-child .about__item-header {
+    border-bottom: none;
+  }
+}
 
-      @include mq($tablet) {
-        width: 33.3%;
-        padding: 44px 44px 40px;
-      }
+.about__item-wrapper {
+  @include mq(768) {
+    position: relative;
+    display: flex;
+  }
 
-      @include mq($desktop) {
-        padding: 52px 60px;
-      }
-
-      &::after {
-        display: none;
-      }
+  &--dark {
+    @include mq(768) {
+      min-height: 256px;
     }
   }
 }
 
 .about__item-header {
   position: relative;
-  padding: 24px 35px 30px;
-  background-color: $grey4;
+  width: 88%;
+  padding: 24px 15px 29px;
+  margin: 0 auto;
+  border-bottom: 1px solid $grey5;
 
   @include mq($tablet) {
+    width: 100%;
     padding: 45px 47px;
+    margin: 0;
+    border-bottom: none;
   }
 
   @include mq($desktop) {
-    width: 100%;
     padding: 45px 47px 65px;
+  }
+
+  &--dark {
+    width: 100%;
+    padding: 38px 20px 40px;
+    color: $white;
+    border-bottom: none;
+
+    @include mq($tablet) {
+      width: 33.3%;
+      padding: 44px;
+    }
+
+    @include mq($desktop) {
+      padding: 52px 60px;
+    }
   }
 }
 
@@ -179,25 +186,25 @@
   margin: 0;
 }
 
-.about__item-image-container {
-  height: 260px;
-
-  @include mq($tablet) {
-    width: 66.7%;
-    height: 256px;
-  }
-}
-
 .about__item-image {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 260px;
   object-fit: cover;
+
+  @include mq(768) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 66.7%;
+    height: 100%;
+  }
 }
 
 .about__details {
-  padding: 25px 22px 19px;
+  padding: 25px 22px 17px;
   text-align: left;
+  background-color: $white;
 
   @include mq($tablet) {
     display: flex;
@@ -272,7 +279,7 @@
 }
 
 .about__details-title {
-  margin: 0 0 13px;
+  margin: 0 0 14px;
   font-size: 18px;
 
   @include mq($tablet) {

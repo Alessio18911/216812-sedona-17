@@ -226,18 +226,16 @@
     margin: 0 10px 0 0;
   }
 
-  &:hover {
-    .media__likes-icon {
-      fill: $black;
+  &:hover svg {
+    fill: $black;
 
-      @include mq($desktop) {
-        fill: $grey2;
-      }
+    @include mq($desktop) {
+      fill: $grey2;
     }
   }
 }
 
-.media__likes-icon {
+.media__likes-button svg {
   fill: $grey1;
   transition: 0.2s ease-in-out;
 
