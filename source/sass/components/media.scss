@@ -237,7 +237,7 @@
 
 .media__likes-button svg {
   fill: $grey1;
-  transition: 0.2s ease-in-out;
+  @include transition();
 
   @include mq($desktop) {
     fill: $white;

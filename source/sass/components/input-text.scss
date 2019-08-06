@@ -61,7 +61,7 @@
   background-color: $grey6;
   border: 4px solid transparent;
   outline: none;
-  transition: 0.2s ease-in-out;
+  @include transition();
   cursor: pointer;
 
   &:hover {

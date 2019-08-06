@@ -9,7 +9,7 @@
   text-transform: uppercase;
   background-color: $mainBlue;
   border: none;
-  transition: 0.2s ease-in-out;
+  @include transition();
   cursor: pointer;
 
   &:hover {

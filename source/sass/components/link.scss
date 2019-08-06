@@ -1,7 +1,7 @@
 .link {
   color: $black;
   text-decoration: none;
-  transition: 0.2s ease-in-out;
+  @include transition();
 
   &:hover {
     color: $mainBlue;
