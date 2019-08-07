@@ -17,7 +17,7 @@
 
   @include mq($desktop) {
     width: 37%;
-    padding: 97px 0 73px;
+    padding: 99px 0 73px;
   }
 
   &::after {
@@ -258,6 +258,6 @@
   }
 
   @include mq($desktop) {
-    padding: 0 0 85px;
+    padding: 0 0 86px;
   }
 }

@@ -77,19 +77,18 @@
 
 .page-header__block-title {
   position: relative;
-  padding: 51px 0 67px;
+  padding: 50px 0 67px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 92%;
+  background-position: 50%;
 
   @include retina() {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 
   @include mq($tablet) {
-    padding: 87px 0 110px;
+    padding: 95px 0 116px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 100%;
     background-size: cover;
 
     @include retina() {
@@ -98,7 +97,7 @@
   }
 
   @include mq($desktop) {
-    padding: 95px 0 114px;
+    padding: 101px 0 118px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @include retina() {
@@ -107,10 +106,10 @@
   }
 
   &--index {
-    padding: 51px 0 46px;
+    padding: 87px 0 85px;
 
     @include mq($tablet) {
-      padding: 51px 0 66px;
+      padding: 78px 0 89px;
     }
   }
 
@@ -144,17 +143,21 @@
   margin: 0 auto;
 
   @include mq($tablet) {
-    width: 457px;
-    height: 93px;
+    width: 456px;
+    height: 80px;
+  }
+
+  @include mq($desktop) {
+    width: 462px;
   }
 
   &--index {
-    width: 280px;
-    height: 292px;
+    width: 281px;
+    height: 216px;
 
     @include mq($tablet) {
-      width: 459px;
-      height: 402px;
+      width: 460px;
+      height: 350px;
     }
   }
 }

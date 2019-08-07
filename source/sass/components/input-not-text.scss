@@ -58,6 +58,14 @@
   }
 
   &--radio {
+    @include mq($tablet) {
+      padding: 0 0 0 75px;
+    }
+
+    @include mq($desktop) {
+      padding: 0 0 0 79px;
+    }
+
     &::before {
       border-radius: 50%;
     }
