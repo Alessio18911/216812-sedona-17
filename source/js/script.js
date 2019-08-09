@@ -15,7 +15,7 @@ function initMap() {
   };
 
   var pin = {
-    url: "../img/icon-map-marker.svg",
+    url: "../img/icon-sp-map-marker.svg",
     scaledSize: new google.maps.Size(27, 27) //IE11
   }
 

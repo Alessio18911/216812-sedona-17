@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="container">
       <header class="page-header">
         <div class="main-nav">
@@ -32,7 +36,7 @@
             <picture>
               <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
               <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона" />
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
             </picture>
           </a>
         </div>
@@ -57,11 +61,11 @@
               <legend class="visually-hidden">Представьтесь:</legend>
               <h3 class="form__legend form__legend--inputs-simple">Представьтесь:</h3>
               <div class="form__input input-text">
-                <input class="input-text__input" id="name-field" name="name" type="text" value="Петр" required>
+                <input class="input-text__input" id="name-field" name="name" type="text" value="Петр" required="">
                 <label class="input-text__label" for="name-field">Имя*:</label>
               </div>
               <div class="form__input input-text">
-                <input class="input-text__input" id="surname-field" name="surname" type="text" value="Иванов" required>
+                <input class="input-text__input" id="surname-field" name="surname" type="text" value="Иванов" required="">
                 <label class="input-text__label" for="surname-field">Фамилия*:</label>
               </div>
               <div class="form__input input-text">
@@ -76,13 +80,13 @@
               <div class="form__fieldset-wrapper form__fieldset-wrapper--with-icon">
                 <div class="form__input form__input--with-icon input-text input-text--with-icon">
                   <div class="input-text__wrapper input-text__wrapper--phone">
-                    <input class="input-text__input input-text__input--with-icon" id="phone-field" name="phone" type="tel" placeholder="Введите телефон" required>
+                    <input class="input-text__input input-text__input--with-icon" id="phone-field" name="phone" type="tel" placeholder="Введите телефон" required="">
                   </div>
                   <label class="input-text__label input-text__label--with-icon" for="phone-field"><span>Контактный</span> телефон*:</label>
                 </div>
                 <div class="form__input form__input--with-icon input-text input-text--with-icon">
                   <div class="input-text__wrapper input-text__wrapper--email">
-                    <input class="input-text__input input-text__input--with-icon" id="email-field" name="email" type="email" placeholder="Введите e-mail" required>
+                    <input class="input-text__input input-text__input--with-icon" id="email-field" name="email" type="email" placeholder="Введите e-mail" required="">
                   </div>
                   <label class="input-text__label input-text__label--with-icon" for="email-field">Электронная почта*:</label>
                 </div>
@@ -93,10 +97,10 @@
               <legend class="visually-hidden">Ваше общее впечатление:</legend>
               <h3 class="form__legend form__legend--radio">Ваше общее впечатление:</h3>
               <div class="form__input form__input--radio input-not-text">
-                <input class="input-not-text__input" id="radio1" name="radio-button" type="radio" checked>
+                <input class="input-not-text__input" id="radio1" name="radio-button" type="radio" checked="">
                 <label for="radio1" class="input-not-text__label input-not-text__label--radio">
                   <svg width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-radio"></use>
+                    <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
                   <span>Скорее положительное</span>
                 </label>
@@ -105,7 +109,7 @@
                 <input class="input-not-text__input" id="radio2" name="radio-button" type="radio">
                 <label for="radio2" class="input-not-text__label input-not-text__label--radio">
                   <svg width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-radio"></use>
+                    <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
                   <span>Скорее отрицательное</span>
                 </label>
@@ -114,7 +118,7 @@
                 <input class="input-not-text__input" id="radio3" name="radio-button" type="radio">
                 <label for="radio3" class="input-not-text__label input-not-text__label--radio">
                   <svg width="24" height="24">
-                    <use xlink:href="img/sprite.svg#icon-radio"></use>
+                    <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
                   <span>Затрудняюсь ответить</span>
                 </label>
@@ -126,28 +130,28 @@
               <h3 class="form__legend form__legend--checkbox">Посещенные достопримечательности:</h3>
               <div class="form__fieldset-wrapper">
                 <div class="form__input form__input--checkbox input-not-text">
-                  <input class="input-not-text__input" id="checkbox1" name="checkbox1" type="checkbox" checked>
+                  <input class="input-not-text__input" id="checkbox1" name="checkbox1" type="checkbox" checked="">
                   <label for="checkbox1" class="input-not-text__label">
                     <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
                     <span>Мост Дьявола</span>
                   </label>
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
-                  <input class="input-not-text__input" id="checkbox2" name="checkbox2" type="checkbox" checked>
+                  <input class="input-not-text__input" id="checkbox2" name="checkbox2" type="checkbox" checked="">
                   <label for="checkbox2" class="input-not-text__label">
                     <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
                     <span>Гора-Колокол</span>
                   </label>
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
-                  <input class="input-not-text__input" id="checkbox3" name="checkbox3" type="checkbox" checked>
+                  <input class="input-not-text__input" id="checkbox3" name="checkbox3" type="checkbox" checked="">
                   <label for="checkbox3" class="input-not-text__label">
                     <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
                     <span>Слайд-парк</span>
                   </label>
@@ -156,7 +160,7 @@
                   <input class="input-not-text__input" id="checkbox4" name="checkbox4" type="checkbox">
                   <label for="checkbox4" class="input-not-text__label">
                     <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
                     <span>Красные скалы</span>
                   </label>
@@ -185,17 +189,17 @@
           <h2 class="visually-hidden">Кнопки соцсетей</h2>
           <a class="social__item" href="#" aria-label="Twitter">
             <svg width="17" height="14">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-twitter"></use>
             </svg>
           </a>
           <a class="social__item" href="#" aria-label="Facebook">
             <svg width="8" height="19">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-facebook"></use>
             </svg>
           </a>
           <a class="social__item" href="#" aria-label="Youtube">
             <svg width="20" height="14">
-              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-youtube"></use>
             </svg>
           </a>
         </section>
@@ -205,7 +209,7 @@
           <span class="page-footer__copyright-sign">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             <svg width="40" height="40">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-htmlacademy"></use>
             </svg>
           </a>
         </section>
