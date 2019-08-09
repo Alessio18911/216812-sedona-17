@@ -16,8 +16,8 @@ function initMap() {
 
   var pin = {
     url: "../img/icon-sp-map-marker.svg",
-    scaledSize: new google.maps.Size(27, 27) //IE11
-  }
+    scaledSize: new google.maps.Size(27, 27)
+  };
 
   var map = new google.maps.Map(document.querySelector("#map"), { center: sedona, zoom: 13 });
 
@@ -26,7 +26,7 @@ function initMap() {
       position: sedona,
       map: map,
       icon: pin,
-      optimized: false, //IE11
+      optimized: false,
       animation: google.maps.Animation.BOUNCE
     });
   }, 2000);
