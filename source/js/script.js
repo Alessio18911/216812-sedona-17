@@ -1,5 +1,5 @@
 window.onload = function() {
-  const toggleMenu = document.querySelector('.page-header__burger-wrapper'),
+  var toggleMenu = document.querySelector('.page-header__burger-wrapper'),
   menu = document.querySelector('.main-nav');
 
   toggleMenu.addEventListener('click', function() {
@@ -9,20 +9,24 @@ window.onload = function() {
 };
 
 function initMap() {
-  const sedona = {
+  var sedona = {
     lat: 34.869897,
     lng: -111.760994
   };
 
-  const pin = "../img/icon-map-marker.svg";
+  var pin = {
+    url: "../img/icon-map-marker.svg",
+    scaledSize: new google.maps.Size(27, 27) //IE11
+  }
 
-  const map = new google.maps.Map(document.querySelector("#map"), { center: sedona, zoom: 13 });
+  var map = new google.maps.Map(document.querySelector("#map"), { center: sedona, zoom: 13 });
 
-  const marker = setTimeout(() => {
+  var marker = setTimeout(function() {
     new google.maps.Marker({
       position: sedona,
       map: map,
       icon: pin,
+      optimized: false, //IE11
       animation: google.maps.Animation.BOUNCE
     });
   }, 2000);
