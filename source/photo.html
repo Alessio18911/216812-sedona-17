@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона: фото и видео</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="container">
       <header class="page-header">
         <div class="main-nav">
@@ -32,7 +36,7 @@
             <picture>
               <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
               <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона" />
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
             </picture>
           </a>
         </div>
@@ -59,8 +63,8 @@
                   <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp, img/photo-sunset-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x" >
-                  <img class="media__photo" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Фото" />
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="media__photo" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Фото">
                 </picture>
               </a>
               <div class="media__photo-info">
@@ -72,7 +76,7 @@
                 <div class="media__likes-block">
                   <button class="media__likes-button" type="button" aria-label="Лайк">
                     <svg width="22" height="20">
-                      <use xlink:href="img/sprite.svg#like-icon"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-like"></use>
                     </svg>
                   </button>
                   <span class="media__likes-count">1350</span>
@@ -86,9 +90,9 @@
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp, img/photo-cactus-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x" >
-                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x" >
-                  <img class="media__photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Фото" />
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="media__photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Фото">
                 </picture>
               </a>
               <div class="media__photo-info">
@@ -100,7 +104,7 @@
                 <div class="media__likes-block">
                   <button class="media__likes-button" type="button" aria-label="Лайк">
                     <svg width="22" height="20">
-                      <use xlink:href="img/sprite.svg#like-icon"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-like"></use>
                     </svg>
                   </button>
                   <span class="media__likes-count">143</span>
@@ -116,7 +120,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
-                  <img class="media__photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Фото" />
+                  <img class="media__photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Фото">
                 </picture>
               </a>
               <div class="media__photo-info">
@@ -128,7 +132,7 @@
                 <div class="media__likes-block">
                   <button class="media__likes-button" type="button" aria-label="Лайк">
                     <svg width="22" height="20">
-                      <use xlink:href="img/sprite.svg#like-icon"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-like"></use>
                     </svg>
                   </button>
                   <span class="media__likes-count">96</span>
@@ -142,9 +146,9 @@
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp, img/photo-bridge-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp, img/photo-bridge-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg 2x" >
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x" >
-                  <img class="media__photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото" />
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="media__photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото">
                 </picture>
               </a>
               <div class="media__photo-info">
@@ -156,7 +160,7 @@
                 <div class="media__likes-block">
                   <button class="media__likes-button" type="button" aria-label="Лайк">
                     <svg width="22" height="20">
-                      <use xlink:href="img/sprite.svg#like-icon"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-like"></use>
                     </svg>
                   </button>
                   <span class="media__likes-count">254</span>
@@ -178,13 +182,13 @@
 
                   <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
-                  <img class="player__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео" />
+                  <img class="player__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео">
                 </picture>
               </div>
               <div class="player__controls">
                 <button class="player__button player__button--replay" type="button">
                   <svg width="16" height="20">
-                    <use xlink:href="img/sprite.svg#replay"></use>
+                    <use xlink:href="img/sprite.svg#icon-sp-video-replay"></use>
                   </svg>
                 </button>
                 <div class="player__progress-bar-wrapper">
@@ -194,12 +198,12 @@
                 </div>
                 <button class="player__button player__button--subtitles">
                   <svg width="32" height="20" fill="#454545">
-                    <use xlink:href="img/sprite.svg#subtitles"></use>
+                    <use xlink:href="img/sprite.svg#icon-sp-video-subtitles"></use>
                   </svg>
                 </button>
                 <button class="player__button player__button--fullscreen">
                     <svg width="20" height="20" fill="#454545">
-                      <use xlink:href="img/sprite.svg#fullscreen"></use>
+                      <use xlink:href="img/sprite.svg#icon-sp-video-fullscreen"></use>
                     </svg>
                 </button>
               </div>
@@ -215,17 +219,17 @@
           <h2 class="visually-hidden">Кнопки соцсетей</h2>
           <a class="social__item" href="#" aria-label="Twitter">
             <svg width="17" height="14">
-              <use xlink:href="img/sprite.svg#twitter"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-twitter"></use>
             </svg>
           </a>
           <a class="social__item" href="#" aria-label="Facebook">
             <svg width="8" height="19">
-              <use xlink:href="img/sprite.svg#fb"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-facebook"></use>
             </svg>
           </a>
           <a class="social__item" href="#" aria-label="Youtube">
             <svg width="20" height="14">
-              <use xlink:href="img/sprite.svg#yt"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-youtube"></use>
             </svg>
           </a>
         </section>
@@ -235,7 +239,7 @@
           <span class="page-footer__copyright-sign">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             <svg width="40" height="40">
-              <use xlink:href="img/sprite.svg#logo"></use>
+              <use xlink:href="img/sprite.svg#icon-sp-htmlacademy"></use>
             </svg>
           </a>
         </section>

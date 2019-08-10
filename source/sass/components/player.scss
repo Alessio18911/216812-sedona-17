@@ -11,7 +11,7 @@
 
 .player__video-wrapper {
   position: relative;
-  padding: 62.5% 0 0;
+  padding: 62.7% 0 0;
 
   @include mq($tablet) {
     padding: 77.5% 0 0;
@@ -111,7 +111,8 @@
 .player__button svg {
   margin: auto;
   fill: $grey7;
-  transition: 0.2s ease-in-out;
+
+  @include transition();
 
   @include mq($tablet) {
     fill: $white;

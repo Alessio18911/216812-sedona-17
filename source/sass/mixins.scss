@@ -9,3 +9,7 @@
     @content;
   }
 }
+
+@mixin transition($props: null, $time: 0.2s, $timingFunction: ease-in-out) {
+  transition: $props $time $timingFunction;
+}

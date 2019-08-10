@@ -1,6 +1,7 @@
 .button {
   display: block;
   padding: 17px;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   color: $white;
@@ -9,8 +10,9 @@
   text-transform: uppercase;
   background-color: $mainBlue;
   border: none;
-  transition: 0.2s ease-in-out;
   cursor: pointer;
+
+  @include transition();
 
   &:hover {
     background-color: $blue1;

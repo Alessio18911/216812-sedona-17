@@ -5,7 +5,8 @@
   line-height: 2.2;
   text-align: center;
   text-transform: uppercase;
-  transition: max-height 0.4s ease-in-out;
+
+  @include transition(max-height, 0.4s);
   overflow: hidden;
 
   @include mq($tablet) {
@@ -59,7 +60,8 @@
   color: $white;
   background-color: $mainBlue;
   text-decoration: none;
-  transition: 0.2s ease-in-out;
+
+  @include transition();
 
   @include mq($tablet) {
     padding: 13px 10px;
