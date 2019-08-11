@@ -17,7 +17,7 @@
 .popup__popup {
   background-color: $white;
   box-shadow: 7px 0 15px $grey1;
-  transform: scale(0) rotate(0deg);
+  transform: scale(0);
 
   &--warning {
     width: 320px;
@@ -40,7 +40,7 @@
   }
 
   &--display {
-    transform: scale(1) rotate(720deg);
+    transform: scale(1) rotate(1080deg);
     transition: transform 0.5s ease-in-out, rotate 0.5s ease-in-out;
   }
 }
