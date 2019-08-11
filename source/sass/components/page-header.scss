@@ -80,7 +80,7 @@
   padding: 50px 0 67px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50% 100%;
 
   @include retina() {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -107,6 +107,7 @@
 
   &--index {
     padding: 87px 0 85px;
+    background-size: cover;
 
     @include mq($tablet) {
       padding: 78px 0 89px;
