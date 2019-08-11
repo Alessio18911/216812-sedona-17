@@ -291,3 +291,11 @@
 .about__details-description {
   margin: 0;
 }
+
+br {
+  display: none;
+
+  @include mq(768) {
+    display: inline;
+  }
+}

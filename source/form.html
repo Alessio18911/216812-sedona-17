@@ -38,15 +38,15 @@
             <picture>
               <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
               <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Перейти на главную страницу">
             </picture>
           </a>
         </div>
         <div class="page-header__burger-wrapper">
-          <button class="page-header__burger" type="button" aria-label="Показать/скрыть главное меню"></button>
+          <button class="page-header__burger" type="button" aria-label="Показать главное меню"></button>
         </div>
         <div class="page-header__block-title">
-          <img class="page-header__title" src="img/text-sedona.svg" width="459" height="360" alt="Sedona">
+          <img class="page-header__title" src="img/text-sedona.svg" width="459" height="360" alt="Седона">
         </div>
       </header>
 
@@ -82,7 +82,7 @@
               <div class="form__fieldset-wrapper form__fieldset-wrapper--with-icon">
                 <div class="form__input form__input--with-icon input-text input-text--with-icon">
                   <div class="input-text__wrapper input-text__wrapper--phone">
-                    <input class="input-text__input input-text__input--with-icon" id="phone-field" name="phone" type="tel" placeholder="Введите телефон" required="">
+                    <input class="input-text__input input-text__input--with-icon" id="phone-field" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required="">
                   </div>
                   <label class="input-text__label input-text__label--with-icon" for="phone-field"><span>Контактный</span> телефон*:</label>
                 </div>
@@ -100,7 +100,7 @@
               <h3 class="form__legend form__legend--radio">Ваше общее впечатление:</h3>
               <div class="form__input form__input--radio input-not-text">
                 <input class="input-not-text__input" id="radio1" name="radio-button" type="radio" checked="">
-                <label for="radio1" class="input-not-text__label input-not-text__label--radio">
+                <label for="radio1" class="input-not-text__label input-not-text__label--radio" tabindex="0">
                   <svg width="24" height="24">
                     <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
@@ -109,7 +109,7 @@
               </div>
               <div class="form__input form__input--radio input-not-text">
                 <input class="input-not-text__input" id="radio2" name="radio-button" type="radio">
-                <label for="radio2" class="input-not-text__label input-not-text__label--radio">
+                <label for="radio2" class="input-not-text__label input-not-text__label--radio" tabindex="0">
                   <svg width="24" height="24">
                     <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
@@ -118,7 +118,7 @@
               </div>
               <div class="form__input form__input--radio input-not-text">
                 <input class="input-not-text__input" id="radio3" name="radio-button" type="radio">
-                <label for="radio3" class="input-not-text__label input-not-text__label--radio">
+                <label for="radio3" class="input-not-text__label input-not-text__label--radio" tabindex="0">
                   <svg width="24" height="24">
                     <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
@@ -133,7 +133,7 @@
               <div class="form__fieldset-wrapper">
                 <div class="form__input form__input--checkbox input-not-text">
                   <input class="input-not-text__input" id="checkbox1" name="checkbox1" type="checkbox" checked="">
-                  <label for="checkbox1" class="input-not-text__label">
+                  <label for="checkbox1" class="input-not-text__label" tabindex="0">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
@@ -142,7 +142,7 @@
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
                   <input class="input-not-text__input" id="checkbox2" name="checkbox2" type="checkbox" checked="">
-                  <label for="checkbox2" class="input-not-text__label">
+                  <label for="checkbox2" class="input-not-text__label" tabindex="0">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
                   <input class="input-not-text__input" id="checkbox3" name="checkbox3" type="checkbox" checked="">
-                  <label for="checkbox3" class="input-not-text__label">
+                  <label for="checkbox3" class="input-not-text__label" tabindex="0">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
                   <input class="input-not-text__input" id="checkbox4" name="checkbox4" type="checkbox">
-                  <label for="checkbox4" class="input-not-text__label">
+                  <label for="checkbox4" class="input-not-text__label" tabindex="0">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
