@@ -1,10 +1,11 @@
 window.onload = function() {
-  var toggleMenu = document.querySelector('.page-header__burger-wrapper'),
-  menu = document.querySelector('.main-nav');
+  var toggleMenu = document.querySelector(".page-header__burger-wrapper"),
+  menu = document.querySelector(".main-nav");
+  menu.classList.remove("main-nav--opened");
 
-  toggleMenu.addEventListener('click', function() {
-    this.classList.toggle('page-header__burger-wrapper--opened');
-    menu.classList.toggle('main-nav--opened');
+  toggleMenu.addEventListener("click", function() {
+    this.classList.toggle("page-header__burger-wrapper--opened");
+    menu.classList.toggle("main-nav--opened");
   });
 
   // Эмуляция открытия модального окна при отправке формы и его закрытия
@@ -15,7 +16,7 @@ window.onload = function() {
           closeButtons = document.querySelectorAll(".popup__button"),
           body = document.querySelector("body");
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener("submit", function(e) {
       e.preventDefault();
       popupSuccess.classList.remove("visually-hidden");
       popupSuccess.querySelector(".popup__popup").classList.add("popup__popup--display");
@@ -29,7 +30,7 @@ window.onload = function() {
     };
 
     for(var i = 0; i < closeButtons.length; i++) {
-      closeButtons[i].addEventListener('click', closePopup);
+      closeButtons[i].addEventListener("click", closePopup);
     }
   }
 };
