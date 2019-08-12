@@ -3,19 +3,12 @@
 }
 
 body {
+  position: relative;
   padding: 0;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   letter-spacing: 0.1px;
-}
-
-.break-line {
-  display: none;
-
-  @include mq(768) {
-    display: inline;
-  }
 }
 
 .container {

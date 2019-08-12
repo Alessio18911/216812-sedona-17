@@ -6,8 +6,35 @@ window.onload = function() {
     this.classList.toggle('page-header__burger-wrapper--opened');
     menu.classList.toggle('main-nav--opened');
   });
+
+  // Эмуляция открытия модального окна при отправке формы и его закрытия
+  if(document.querySelector(".form")) {
+    var form = document.querySelector(".form"),
+          popupSuccess = document.querySelector(".popup.popup--success"),
+          popupWarning = document.querySelector(".popup.popup--warning"),
+          closeButtons = document.querySelectorAll(".popup__button"),
+          body = document.querySelector("body");
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      popupSuccess.classList.remove("visually-hidden");
+      popupSuccess.querySelector(".popup__popup").classList.add("popup__popup--display");
+      body.style.overflow = "hidden";
+    });
+
+    var closePopup = function() {
+      popupSuccess.classList.add("visually-hidden");
+      popupSuccess.querySelector(".popup__popup").classList.remove("popup__popup--display");
+      body.style.overflow = "auto";
+    };
+
+    for(var i = 0; i < closeButtons.length; i++) {
+      closeButtons[i].addEventListener('click', closePopup);
+    }
+  }
 };
 
+// карта на главной странице
 function initMap() {
   var sedona = {
     lat: 34.869897,
