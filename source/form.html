@@ -15,6 +15,9 @@
 
     <div class="container">
       <header class="page-header">
+        <div class="page-header__burger-wrapper">
+          <button class="page-header__burger" type="button" aria-label="Показать главное меню"></button>
+        </div>
         <div class="main-nav">
           <ul class="main-nav__part main-nav__part--left">
             <li class="main-nav__item main-nav__item--first">
@@ -41,9 +44,6 @@
               <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Перейти на главную страницу">
             </picture>
           </a>
-        </div>
-        <div class="page-header__burger-wrapper">
-          <button class="page-header__burger" type="button" aria-label="Показать главное меню"></button>
         </div>
         <div class="page-header__block-title">
           <img class="page-header__title" src="img/text-sedona.svg" width="459" height="360" alt="Седона">
@@ -99,8 +99,8 @@
               <legend class="visually-hidden">Ваше общее впечатление:</legend>
               <h3 class="form__legend form__legend--radio">Ваше общее впечатление:</h3>
               <div class="form__input form__input--radio input-not-text">
-                <input class="input-not-text__input" id="radio1" name="radio-button" type="radio" checked="">
-                <label for="radio1" class="input-not-text__label input-not-text__label--radio" tabindex="0">
+                <input class="input-not-text__input visually-hidden" id="radio1" name="radio-button" type="radio" checked="">
+                <label for="radio1" class="input-not-text__label input-not-text__label--radio">
                   <svg width="24" height="24">
                     <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
@@ -108,8 +108,8 @@
                 </label>
               </div>
               <div class="form__input form__input--radio input-not-text">
-                <input class="input-not-text__input" id="radio2" name="radio-button" type="radio">
-                <label for="radio2" class="input-not-text__label input-not-text__label--radio" tabindex="0">
+                <input class="input-not-text__input visually-hidden" id="radio2" name="radio-button" type="radio">
+                <label for="radio2" class="input-not-text__label input-not-text__label--radio">
                   <svg width="24" height="24">
                     <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
@@ -117,8 +117,8 @@
                 </label>
               </div>
               <div class="form__input form__input--radio input-not-text">
-                <input class="input-not-text__input" id="radio3" name="radio-button" type="radio">
-                <label for="radio3" class="input-not-text__label input-not-text__label--radio" tabindex="0">
+                <input class="input-not-text__input visually-hidden" id="radio3" name="radio-button" type="radio">
+                <label for="radio3" class="input-not-text__label input-not-text__label--radio">
                   <svg width="24" height="24">
                     <use xlink:href="img/sprite.svg#icon-sp-radio"></use>
                   </svg>
@@ -132,8 +132,8 @@
               <h3 class="form__legend form__legend--checkbox">Посещенные достопримечательности:</h3>
               <div class="form__fieldset-wrapper">
                 <div class="form__input form__input--checkbox input-not-text">
-                  <input class="input-not-text__input" id="checkbox1" name="checkbox1" type="checkbox" checked="">
-                  <label for="checkbox1" class="input-not-text__label" tabindex="0">
+                  <input class="input-not-text__input visually-hidden" id="checkbox1" name="checkbox1" type="checkbox" checked="">
+                  <label for="checkbox1" class="input-not-text__label">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
@@ -141,8 +141,8 @@
                   </label>
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
-                  <input class="input-not-text__input" id="checkbox2" name="checkbox2" type="checkbox" checked="">
-                  <label for="checkbox2" class="input-not-text__label" tabindex="0">
+                  <input class="input-not-text__input visually-hidden" id="checkbox2" name="checkbox2" type="checkbox" checked="">
+                  <label for="checkbox2" class="input-not-text__label">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
@@ -150,8 +150,8 @@
                   </label>
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
-                  <input class="input-not-text__input" id="checkbox3" name="checkbox3" type="checkbox" checked="">
-                  <label for="checkbox3" class="input-not-text__label" tabindex="0">
+                  <input class="input-not-text__input visually-hidden" id="checkbox3" name="checkbox3" type="checkbox" checked="">
+                  <label for="checkbox3" class="input-not-text__label">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
@@ -159,8 +159,8 @@
                   </label>
                 </div>
                 <div class="form__input form__input--checkbox input-not-text">
-                  <input class="input-not-text__input" id="checkbox4" name="checkbox4" type="checkbox">
-                  <label for="checkbox4" class="input-not-text__label" tabindex="0">
+                  <input class="input-not-text__input visually-hidden" id="checkbox4" name="checkbox4" type="checkbox">
+                  <label for="checkbox4" class="input-not-text__label">
                     <svg width="24" height="24">
                       <use xlink:href="img/sprite.svg#icon-sp-tick"></use>
                     </svg>
