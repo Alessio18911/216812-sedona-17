@@ -207,6 +207,7 @@
 
   @include mq($tablet) {
     display: flex;
+    flex-wrap: wrap;
     padding: 57px 0 61px;
     text-align: center;
   }
