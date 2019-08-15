@@ -88,7 +88,7 @@
   }
 
   @include mq($tablet) {
-    padding: 95px 0 116px;
+    padding: 95px 0 114px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
 
@@ -107,7 +107,7 @@
   }
 
   &--index {
-    padding: 87px 0 85px;
+    padding: 88px 0 83px;
     background-size: cover;
 
     @include mq($tablet) {

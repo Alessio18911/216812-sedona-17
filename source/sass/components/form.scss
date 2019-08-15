@@ -111,13 +111,17 @@
   &--inputs-simple {
     @include mq($tablet) {
       width: 100%;
-      margin: 0 0 58px;
+      margin: 0 0 58px 3px;
       text-align: left;
 
       &::before,
       &::after {
         display: none;
       }
+    }
+
+    @include mq($desktop) {
+      margin: 0 0 58px 1px;
     }
   }
 
@@ -256,7 +260,7 @@
   }
 
   @include mq($desktop) {
-    margin: 0 0 65px;
+    margin: 0 0 62px;
   }
 }
 
@@ -277,7 +281,11 @@
   @include mq($tablet) {
     display: block;
     max-width: 200px;
-    margin: 0;
+    margin: 4px 0 0;
     color: $grey8;
+  }
+
+  @include mq($desktop) {
+    margin: 0;
   }
 }

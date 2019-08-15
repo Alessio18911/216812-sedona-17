@@ -18,12 +18,12 @@
 
   @include mq($tablet) {
     width: 58%;
-    padding: 68px 0 74px;
+    padding: 69px 0 74px;
   }
 
   @include mq($desktop) {
     width: 37%;
-    padding: 106px 0 59px;
+    padding: 107px 0 59px;
   }
 }
 

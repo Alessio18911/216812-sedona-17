@@ -1,5 +1,5 @@
 .about {
-  line-height: 1.5;
+  line-height: 1.45;
   text-align: center;
   text-transform: uppercase;
 }
@@ -26,12 +26,12 @@
 
 .about__header-wrapper {
   width: 85%;
-  padding: 38px 0 43px;
+  padding: 41px 0 43px;
   margin: 0 auto;
 
   @include mq($tablet) {
     width: 70%;
-    padding: 52px 0 50px;
+    padding: 51px 0;
   }
 
   @include mq($desktop) {
@@ -46,6 +46,12 @@
   @include mq($tablet) {
     font-size: 21px;
     line-height: 1.24;
+  }
+}
+
+.about__title br {
+  @include mq(768) {
+    display: none;
   }
 }
 
@@ -109,7 +115,7 @@
 .about__item-header {
   position: relative;
   width: 88%;
-  padding: 24px 15px 29px;
+  padding: 25px 15px 29px;
   margin: 0 auto;
   border-bottom: 1px solid $grey5;
 
@@ -126,7 +132,7 @@
 
   &--dark {
     width: 100%;
-    padding: 38px 20px 40px;
+    padding: 40px 20px 41px;
     color: $white;
     border-bottom: none;
 
@@ -136,7 +142,7 @@
     }
 
     @include mq($desktop) {
-      padding: 54px 60px;
+      padding: 52px 60px 54px;
     }
   }
 }
@@ -146,8 +152,20 @@
   font-size: 18px;
 
   @include mq($tablet) {
+    width: 90%;
+    margin: 0 auto 10px;
     font-size: 21px;
     line-height: 1.24;
+  }
+
+  @include mq($desktop) {
+    width: 40%;
+  }
+
+  &--dark {
+    @include mq($desktop) {
+      width: 54%;
+    }
   }
 }
 
@@ -155,10 +173,14 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 14px;
+  margin: 0 0 16px;
 
   @include mq($tablet) {
-    margin: 0 0 21px;
+    margin: 0 0 24px;
+  }
+
+  @include mq($desktop) {
+    margin: 0 0 22px;
   }
 
   &::before,
@@ -183,6 +205,26 @@
 
 .about__item-intro {
   margin: 0;
+
+  br {
+    display: none;
+
+    @include mq($tablet) {
+      display: inline;
+    }
+
+    @include mq($desktop) {
+      display: none;
+    }
+  }
+
+  &--dark br {
+    display: none;
+
+    @include mq($desktop) {
+      display: inline;
+    }
+  }
 }
 
 .about__item-image {
@@ -201,26 +243,35 @@
 }
 
 .about__details {
-  padding: 25px 22px 17px;
+  padding: 25px 22px 19px;
   text-align: left;
   background-color: $white;
 
   @include mq($tablet) {
     display: flex;
-    padding: 57px 0 61px;
+    flex-wrap: wrap;
+    padding: 57px 0 60px;
     text-align: center;
   }
 
   @include mq($desktop) {
     width: 100%;
-    padding: 57px 0 82px;
+    padding: 57px 0 81px;
+  }
+}
+
+.about__details br {
+  display: none;
+
+  @include mq(768) {
+    display: inline;
   }
 }
 
 .about__details-item {
   position: relative;
   display: flex;
-  padding: 0 0 19px;
+  padding: 0 0 18px;
 
   @include mq($tablet) {
     display: block;
@@ -270,7 +321,7 @@
 }
 
 .about__details-item-header {
-  padding: 9px 0 0;
+  padding: 10px 0 0;
 
   @include mq($tablet) {
     padding: 0 45px;
@@ -290,9 +341,10 @@
 
 .about__details-description {
   margin: 0;
+  line-height: 1.5;
 }
 
-br {
+.about__details-description br {
   display: none;
 
   @include mq(768) {

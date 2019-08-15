@@ -12,7 +12,7 @@
 
   @include mq($tablet) {
     width: 58%;
-    padding: 62px 0 70px;
+    padding: 62px 0 71px;
   }
 
   @include mq($desktop) {
@@ -68,6 +68,10 @@
 
 .media__intro {
   margin: 0;
+
+  @include mq($tablet) {
+    width: 99%;
+  }
 }
 
 .media__wrapper {
@@ -99,7 +103,7 @@
   @include mq($desktop) {
     position: relative;
     width: calc(100% / 3);
-    padding: 15.6% 0 0;
+    padding: 15.65% 0 0;
   }
 
   &:first-child {
@@ -108,7 +112,7 @@
     }
 
     @include mq($desktop) {
-      padding: 26.7% 0 0;
+      padding: 26.75% 0 0;
     }
 
     .media__photo-link {

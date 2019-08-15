@@ -15,7 +15,10 @@
 
     <div class="container">
       <header class="page-header">
-        <div class="main-nav">
+        <div class="page-header__burger-wrapper">
+          <button class="page-header__burger" type="button" aria-label="Показать главное меню"></button>
+        </div>
+        <div class="main-nav main-nav--opened">
           <ul class="main-nav__part main-nav__part--left">
             <li class="main-nav__item main-nav__item--first">
               <a class="main-nav__item-link is-active" href="">Главная</a>
@@ -42,9 +45,6 @@
             </picture>
           </a>
         </div>
-        <div class="page-header__burger-wrapper">
-          <button class="page-header__burger" type="button" aria-label="Показать главное меню"></button>
-        </div>
         <div class="page-header__block-title page-header__block-title--index">
           <img class="page-header__title page-header__title--index" src="img/text-sedona-index.svg" width="459" height="360" alt="Добро пожаловать в великолепную Седону!">
         </div>
@@ -61,7 +61,7 @@
             <section class="about__item about__item--dark">
               <div class="about__item-wrapper about__item-wrapper--dark">
                 <header class="about__item-header about__item-header--dark">
-                  <h3 class="about__item-title">Настоящий<br> городок</h3>
+                  <h3 class="about__item-title">Настоящий городок</h3>
                   <span class="about__item-number">№1</span>
                   <p class="about__item-intro">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </header>
@@ -85,13 +85,13 @@
                 <div class="about__details-item about__details-item--dark about__details-item--second">
                   <header class="about__details-item-header">
                     <h4 class="about__details-title">Сувениры</h4>
-                    <p class="about__details-description">Не только китайского, но и местного производства!</p>
+                    <p class="about__details-description">Не только китайского,<br> но и местного производства!</p>
                   </header>
                 </div>
                 <div class="about__details-item about__details-item--third">
                   <header class="about__details-item-header">
                     <h4 class="about__details-title">Еда</h4>
-                    <p class="about__details-description">Всегда заказывайте<br> фирменный бургер, Вы не разочаруетесь!</p>
+                    <p class="about__details-description">Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!</p>
                   </header>
                 </div>
               </section>
@@ -99,9 +99,9 @@
             <section class="about__item about__item--dark">
               <div class="about__item-wrapper about__item-wrapper--dark">
                 <header class="about__item-header about__item-header--dark">
-                  <h3 class="about__item-title">Там есть<br> мост дьявола</h3>
+                  <h3 class="about__item-title about__item-title--dark">Там есть мост дьявола</h3>
                   <span class="about__item-number">№2</span>
-                  <p class="about__item-intro">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="about__item-intro about__item-intro--dark">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
                 </header>
                 <picture class="about__item-image-container">
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
@@ -117,7 +117,7 @@
             <section class="about__item">
               <div class="about__item-wrapper">
                 <header class="about__item-header">
-                  <h3 class="about__item-title">Небольшая<br> площадь</h3>
+                  <h3 class="about__item-title">Небольшая площадь</h3>
                   <span class="about__item-number">№3</span>
                   <p class="about__item-intro">Все интересные места находятся очень близко</p>
                 </header>
@@ -126,16 +126,16 @@
             <section class="about__item">
               <div class="about__item-wrapper">
                 <header class="about__item-header">
-                  <h3 class="about__item-title">Красивая<br> дорога</h3>
+                  <h3 class="about__item-title">Красивая дорога</h3>
                   <span class="about__item-number">№4</span>
-                  <p class="about__item-intro">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                  <p class="about__item-intro">Ехать в Седону из<br> Лас-Вегаса совсем<br> не скучно!</p>
                 </header>
               </div>
             </section>
             <section class="about__item">
               <div class="about__item-wrapper">
                 <header class="about__item-header">
-                  <h3 class="about__item-title">Мало<br> туристов</h3>
+                  <h3 class="about__item-title">Мало туристов</h3>
                   <span class="about__item-number">№5</span>
                   <p class="about__item-intro">Большинство едет в Гранд каньон и толпится там</p>
                 </header>

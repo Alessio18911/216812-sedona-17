@@ -1,5 +1,5 @@
-.input-not-text__input {
-  display: none;
+.input-not-text__input:focus ~ .input-not-text__label {
+  outline: 1px solid $focusBlue;
 }
 
 .input-not-text__input:checked ~ .input-not-text__label svg {
